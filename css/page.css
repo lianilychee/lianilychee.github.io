@@ -1,0 +1,36 @@
+#menu {
+	background: #26262E;
+	color: white;
+	margin: 0;
+	border: 0;
+	padding: 0.5em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: center;
+	display: inline;
+}
+
+.menuLink {
+	text-decoration: none;
+	display: inline-block;
+	width: 100px;
+}
+
+.menuLink:link {
+	color: white;
+}
+
+.menuLink:visited {
+	color: white;
+}
+
+.menuLink:hover {
+	color: gray;
+}
