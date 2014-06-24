@@ -34,3 +34,9 @@ li {
 .menuLink:hover {
 	color: gray;
 }
+
+#footer {
+	background: #26262E;
+	color: white;
+	padding: 0.5em;
+}
