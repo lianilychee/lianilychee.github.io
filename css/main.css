@@ -1,0 +1,65 @@
+
+/* -- TEXT -- */
+
+h1 {
+	font-size: 48px;
+}
+
+.gridTitle {
+	font-size: 24px;
+}
+
+.gridSubtitle {
+	font-size: 12px;
+	color: #C0C0C0;
+}
+
+/* -- MENU -- */
+#menu {
+	background: #26262E;
+	color: white;
+	margin: 0;
+	border: 0;
+	padding: 0.5em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: center;
+	display: inline;
+}
+
+.menuLink {
+	text-decoration: none;
+	display: inline-block;
+	width: 100px;
+}
+
+.menuLink:link {
+	color: white;
+}
+
+.menuLink:visited {
+	color: white;
+}
+
+.menuLink:hover {
+	color: gray;
+}
+
+#footer {
+	background: #26262E;
+	color: white;
+	padding: 0.5em;
+}
+
+/*-- FOLIO -- */
+.folioLink {
+	text-decoration: none;
+	color: 
+}
