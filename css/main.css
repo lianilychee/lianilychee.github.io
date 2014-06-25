@@ -14,19 +14,27 @@ h1 {
 	color: #C0C0C0;
 }
 
+#about {
+	position: relative;
+	top: 35px;
+}
+
 /* -- MENU -- */
 #menu {
-	background: #26262E;
-	color: white;
-	margin: 0;
-	border: 0;
-	padding: 0.5em;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background: #333333;
+	text-align: center;
 }
 
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	border: 0;
 }
 
 li {
@@ -59,6 +67,15 @@ li {
 }
 
 /*-- FOLIO -- */
+.keyInfo{
+	position: relative;
+	top: 50px;
+}
+
+.story{
+	position: relative;
+}
+
 .folioLink {
 	text-decoration: none;
 	color: 
