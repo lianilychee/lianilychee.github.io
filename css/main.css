@@ -22,12 +22,11 @@ h1 {
 /* -- MENU -- */
 #menu {
 	width: 100%;
-	position: fixed;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	background: #333333;
-	text-align: center;
 }
 
 ul {
