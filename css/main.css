@@ -1,5 +1,4 @@
-
-/* -- TEXT -- */
+/* ----- TEXT ----- */
 
 h1 {
 	font-size: 48px;
@@ -19,14 +18,15 @@ h1 {
 	top: 35px;
 }
 
-/* -- MENU -- */
+/* ----- MENU ----- */
 #menu {
 	width: 100%;
-	position: relative;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	background: #333333;
+	color: white;
 }
 
 ul {
@@ -65,14 +65,26 @@ li {
 	padding: 0.5em;
 }
 
-/*-- FOLIO -- */
+/* ----- SLIDER ----- */
+
+
+/* ----- FOLIO ----- */
+.content{
+	width: 75%;
+	margin: 0 auto;
+}
+
 .keyInfo{
+	width: 20%;
 	position: relative;
 	top: 50px;
+	float: left;
 }
 
 .story{
+	width: 50%;
 	position: relative;
+	float: right;
 }
 
 .folioLink {
