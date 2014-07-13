@@ -1,53 +1,53 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>SlidesJS Standard Code Example</title>
-  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
-  <meta name="author" content="Nathan Searles">
-  <meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<title>SlidesJS Standard Code Example</title>
+	<meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+	<meta name="author" content="Nathan Searles">
+	<meta name="viewport" content="width=device-width">
 
-  <!-- slidesJS stylesheets -->
-  <link rel="stylesheet" href="css/example.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/optional.css">
-  <link rel="stylesheet" href="css/required.css">
+	<!-- slidesJS stylesheets -->
+	<link rel="stylesheet" href="css/example.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/optional.css">
+	<link rel="stylesheet" href="css/required.css">
 
-  <!-- scripts -->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="js/jquery.slides.min.js"></script>
+	<!-- scripts -->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
 
 
 </head>
 <body>
 
-  <!-- SlidesJS Required: Start Slides -->
-  <div class="container">
-	<div id="slides">
-	  <img src="img/example-slide-1.jpg">
-	  <img src="img/example-slide-2.jpg">
-	  <img src="img/example-slide-3.jpg">
-	  <img src="img/example-slide-4.jpg">
-	  <!-- SUPPRESSING NAVIGATION CHEVRONS
+	<!-- SlidesJS Required: Start Slides -->
+	<div class="container">
+		<div id="slides">
+			<img src="img/example-slide-1.jpg">
+			<img src="img/example-slide-2.jpg">
+			<img src="img/example-slide-3.jpg">
+			<img src="img/example-slide-4.jpg">
+			
+			<!-- SUPPRESSING NAVIGATION CHEVRONS -->
+			<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+			<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
-    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-	  <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
-
-    -->
+	
+		</div>
 	</div>
-  </div>
-  <!-- End SlidesJS Required: Start Slides -->
+	<!-- End SlidesJS Required: Start Slides -->
 
-  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-  <script>
-	$(function() {
-	  $('#slides').slidesjs({
-		width: 940,
-		height: 528,
-		navigation: false
-	  });
-	});
-  </script>
-  <!-- End SlidesJS Required -->
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script>
+		$(function() {
+			$('#slides').slidesjs({
+				width: 940,
+				height: 528,
+			navigation: false
+			});
+		});
+	</script>
+<!-- End SlidesJS Required -->
 </body>
 </html>
