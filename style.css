@@ -1,5 +1,8 @@
 body {
 	margin: 0;
+	height: 100%;
+	width: 100%;
+
 }
 
 /* ----- SPLASH PAGE ----- */
@@ -7,39 +10,38 @@ body {
 	height: 100%;
 	width: 100%;
 	position: relative;
+	background-color: black;
 }
+	#splash-background {
+		height: 99.5%;
+		width: 100%;
+	}
+	#menu-container {
+		position: absolute;
+		top: 10%;
+		/* deal w this if you want to try centering
+		left: auto;
+		right: auto; */
+		padding: 10px;
+		background: black;
+		background: rgba(0,0,0,0.85);
+	}
+	.menu {
+		color: white;
+		font-family: sans-serif;
+	}
+	.icon {
 
-#splash-background {
-	height: 100%;
-	width: 100%;
-}
-
-#menu-container {
-	position: absolute;
-	top: 10%;
-	/* deal w this if you want to try centering
-	left: auto;
-	right: auto; */
-	padding: 10px;
-	background: black;
-	background: rgba(0,0,0,0.85);
-}
-
-.menu {
-	color: white;
-	font-family: sans-serif;
-}
-
-.icon {}
-
-#contact-container {
-	position: absolute;
-	top: 50%;
-	padding: 10px;
-	background: black;
-	background: rgba(0,0,0,0.85);
-	color: white;
-}
+	}
+	#footer {
+		position: absolute;
+		width: 97%;
+		bottom: 0;
+		padding: 10px;
+		background: black;
+		background: rgba(0,0,0,0.85);
+		color: white;
+	}
 
 /* ----- FOLIO ----- */
 .hide{
