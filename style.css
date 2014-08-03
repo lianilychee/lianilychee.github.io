@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+}
+
+/* ----- SPLASH PAGE ----- */
+.splash-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#splash-background {
+	height: 100%;
+	width: 100%;
+}
+
+.menu-container {
+	position: absolute;
+	top: 10%;
+	/* deal w this if you want to try centering
+	left: auto;
+	right: auto; */
+	padding: 10px;
+	background: black;
+	background: rgba(0,0,0,0.85);
+}
+
+.menu {
+	color: white;
+	font-family: sans-serif;
+}
