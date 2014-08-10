@@ -64,16 +64,24 @@ body {
 	background-color: red;
 	margin: 10px;
 }
-/*
+
 .thumbnail-picture {
+	background-image: url("img/portrait.jpg");
 	height: 200px;
-	background-color: green;
+	width: 325px;
+	background-position: center;
+	background-size: cover;
+	/*background-color: green;*/
 }
-*/
+
 .thumbnail-title {
 	font-size: 16pt;
 }
 .thumbnail-tagline {
 	font-size: 11pt;
 	font-style: italic;
+}
+
+.crop {
+	width: ;
 }

@@ -8,6 +8,6 @@ $(document).ready( function() {
 	})
 
 	/** RESIZING THUMBNAIL IMAGES **/
-	UTILS.thumbnail();
+	//UTILS.thumbnail();
 
 })
