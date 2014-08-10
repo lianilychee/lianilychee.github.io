@@ -56,17 +56,20 @@ body {
 	padding: 10px;
 	color: white;
 }
-#folio {}
+#folio {
+}
 .thumbnail-container {
 	height: 250px;
 	width: 325px;
 	background-color: red;
 	margin: 10px;
 }
+/*
 .thumbnail-picture {
 	height: 200px;
 	background-color: green;
 }
+*/
 .thumbnail-title {
 	font-size: 16pt;
 }
