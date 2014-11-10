@@ -12,15 +12,13 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body
-	{
+	body {
 		background-image:			url('images/overlay.png'),		url('images/bg.jpg');
 		background-repeat:			repeat,							no-repeat;
 		background-size:			auto,							100% 100%;
 	}
 
-		body.is-loading *
-		{
+		body.is-loading * {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
 			-o-transition: none !important;
@@ -33,110 +31,92 @@
 			animation: none !important;
 		}
 		
-	body,input,textarea,select
-	{
+	body,input,textarea,select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
 	}
 	
-	strong, b
-	{
+	strong, b {
 		font-weight: 400;
 		color: #363636;
 	}
 
-	h1, h2, h3, h4,h5, h6
-	{
+	h1, h2, h3, h4,h5, h6 {
 		font-weight: 400;
 		color: #363636;
 	}
 	
-	blockquote
-	{
+	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
 	
-	em, i
-	{
+	em, i {
 		font-style: italic;
 	}
 	
-	hr
-	{
+	hr {
 		border: 0;
 		border-top: solid 1px #ddd;
 		padding: 1.5em 0 0 0;
 		margin: 1.75em 0 0 0;
 	}
 	
-	sub
-	{
+	sub {
 		position: relative;
 		top: 0.5em;
 		font-size: 0.8em;
 	}
 	
-	sup
-	{
+	sup {
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
 
-	br.clear
-	{
+	br.clear {
 		clear: both;
 	}
 	
-	p, ul, ol, dl, table, blockquote, form
-	{
+	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
 	}
 		
 	/* Table */
 	
-		table
-		{
+		table {
 			width: 100%;
 		}
 		
-			table.default
-			{
+			table.default {
 			}
 			
-				table.default tbody tr
-				{
+				table.default tbody tr {
 					border-bottom: solid 1px #f4f4f4;
 				}
 				
-				table.default td
-				{
+				table.default td {
 					padding: 0.5em 1em 0.5em 1em;
 				}
 				
-				table.default th
-				{
+				table.default th {
 					text-align: left;
 					font-weight: 400;
 					padding: 0.5em 1em 0.5em 1em;
 				}
 			
-				table.default thead
-				{
+				table.default thead {
 					border-bottom: solid 2px #f4f4f4;
 				}
 
 	/* Form */
 
-		form
-		{
+		form {
 		}
 		
-			form label
-			{
+			form label {
 				display: block;
 				font-weight: 400;
 				color: #363636;
@@ -147,8 +127,7 @@
 			form input[type="email"],
 			form input[type="password"],
 			form select,
-			form textarea
-			{
+			form textarea {
 				-webkit-appearance: none;
 				border: 0;
 				background: #f4f4f4;
@@ -164,8 +143,7 @@
 			form input[type="text"],
 			form input[type="email"],
 			form input[type="password"],
-			form select
-			{
+			form select {
 				line-height: 1.35em;
 			}
 
@@ -173,100 +151,83 @@
 			form input[type="email"]:focus,
 			form input[type="password"]:focus,
 			form select:focus,
-			form textarea:focus
-			{
+			form textarea:focus {
 				background: #f8f8f8;
 			}
 
-			form ::-webkit-input-placeholder
-			{
+			form ::-webkit-input-placeholder {
 				color: #999;
 			}
 
-			form :-moz-placeholder
-			{
+			form :-moz-placeholder {
 				color: #999;
 			}
 
-			form ::-moz-placeholder
-			{
+			form ::-moz-placeholder {
 				color: #999;
 			}
 
-			form :-ms-input-placeholder
-			{
+			form :-ms-input-placeholder {
 				color: #999;
 			}		
 
 	/* Section/Article */
 
 		section,
-		article
-		{
+		article {
 			margin-bottom: 3em;
 		}
 		
 			section > :last-child,
-			article > :last-child
-			{
+			article > :last-child {
 				margin-bottom: 0;
 			}
 
 			section:last-child,
-			article:last-child
-			{
+			article:last-child {
 				margin-bottom: 0;
 			}
 
-		header
-		{
+		header {
 		}
 		
-			header > p
-			{
+			header > p {
 				color: #aaa;
 			}
 	
 	/* Image */
 
-		.image
-		{
+		.image {
 			display: inline-block;
 		}
 		
-			.image img
-			{
+			.image img {
 				display: block;
 				width: 100%;
 			}
 
-			.image.fit
-			{
+			.image.fit {
 				display: block;
 				width: 100%;
 			}
 			
-			.image.featured
-			{
+			.image.featured {
 				display: block;
 				width: 100%;
 				margin: 0 0 2em 0;
 			}
 			
-			.image.left
-			{
+			.image.left {
 				float: left;
 				margin: 0 2em 2em 0;
 			}
 			
-			.image.centered
-			{
+			.image.centered {
 				display: block;
 				margin: 0 0 2em 0;
 			}
 
-				.image.centered img
-				{
+				.image.centered img {
 					margin: 0 auto;
 					width: auto;
 				}
@@ -276,8 +237,7 @@
 		input[type="button"],
 		input[type="submit"],
 		input[type="reset"],
-		.button
-		{
+		.button {
 			-webkit-appearance: none;
 			display: inline-block;
 			background-color: #222222;
@@ -295,79 +255,67 @@
 			input[type="button"]:hover,
 			input[type="submit"]:hover,
 			input[type="reset"]:hover,
-			.button:hover
-			{
+			.button:hover {
 				background-color: #333333;
 			}
 			
 			input[type="button"]:active,
 			input[type="submit"]:active,
 			input[type="reset"]:active,
-			.button:active
-			{
+			.button:active {
 				background-color: #444444;
 			}
 		
 			input[type="button"].alt,
 			input[type="submit"].alt,
 			input[type="reset"].alt,
-			.button.alt
-			{
+			.button.alt {
 				background-color: #777777;
 			}
 
 				input[type="button"].alt:hover,
 				input[type="submit"].alt:hover,
 				input[type="reset"].alt:hover,
-				.button.alt:hover
-				{
+				.button.alt:hover {
 					background-color: #888888;
 				}
 				
 				input[type="button"].alt:active,
 				input[type="submit"].alt:active,
 				input[type="reset"].alt:active,
-				.button.alt:active
-				{
+				.button.alt:active {
 					background-color: #999999;
 				}
 	
 	/* List */
 	
-		ul.default
-		{
+		ul.default {
 			list-style: disc;
 			padding-left: 1em;
 		}
 		
-			ul.default li
-			{
+			ul.default li {
 				padding-left: 0.5em;
 			}
 			
-		ul.actions
-		{
+		ul.actions {
 		}
 		
-			ul.actions li
-			{
+			ul.actions li {
 				display: inline-block;
 				margin-left: 0.5em;
 			}
 			
-				ul.actions li:first-child
-				{
+				ul.actions li:first-child {
 					margin-left: 0;
 				}
 		
-		ol.default
-		{
+		ol.default {
 			list-style: decimal;
 			padding-left: 1.25em;
 		}
 
-			ol.default li
-			{
+			ol.default li {
 				padding-left: 0.25em;
 			}
 
@@ -397,12 +345,10 @@
 /* Nav                                                                           */
 /*********************************************************************************/
 	
-	#nav
-	{
+	#nav {
 	}
 	
-		#nav a
-		{
+		#nav a {
 			position: relative;
 			display: inline-block;
 			color: #ffffff;
@@ -411,8 +357,7 @@
 			line-height: 0.9em;
 		}
 
-			#nav a.icon:before
-			{
+			#nav a.icon:before {
 				padding-right: 0;
 			}
 		
@@ -420,31 +365,30 @@
 /* Panels                                                                        */
 /*********************************************************************************/
 
-	#main
-	{
+	#punkface {
+		background-color: red;
+	}
+
+	#main {
 		position: relative;
 		overflow: hidden;
 	}
 
-	.panel
-	{
+	.panel {
 		position: relative;
 	}
 
 	/* Me */
 	
-		#me
-		{
+		#me {
 		}
 		
-			#me .pic
-			{
+			#me .pic {
 				position: relative;
 				display: block;
 			}
 
-				#me .pic:before
-				{
+				#me .pic:before {
 					content: '';
 					position: absolute;
 					top: 0;
@@ -459,14 +403,12 @@
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-	{
+	#footer {
 		color: #ccc;
 		color: rgba(255,255,255,0.45);
 	}
 
-		#footer a
-		{
+		#footer a {
 			color: #ddd;
 			color: rgba(255,255,255,0.65);
 			-moz-transition: color .25s ease-in-out;
@@ -476,29 +418,24 @@
 			transition: color .25s ease-in-out;
 		}
 		
-		#footer a:hover
-		{
+		#footer a:hover {
 			color: rgba(255,255,255,1.0);
 		}
 		
-		#footer .copyright
-		{
+		#footer .copyright {
 		}
 		
-			#footer .copyright li
-			{
+			#footer .copyright li {
 				display: inline-block;
 			}
 
-				#footer .copyright li:before
-				{
+				#footer .copyright li:before {
 					display: inline;
 					content: '\2022';
 					opacity: 0.5;
 					padding: 0 0.75em 0 0.75em;
 				}
 			
-				#footer .copyright li:first-child:before
-				{
+				#footer .copyright li:first-child:before {
 					display: none;
 				}
