@@ -13,7 +13,7 @@
 /*********************************************************************************/
 
 	body {
-		background-image:			url('images/overlay.png'),		url('images/bg.jpg');
+		background-image:			url('../images/overlay.png'),		url('../images/bg.jpg');
 		background-repeat:			repeat,							no-repeat;
 		background-size:			auto,							100% 100%;
 	}
@@ -373,9 +373,6 @@
 	#subpunkface {
 		/*Super sketchy; gotta adjust the width every time I change the picture.  Awks.*/
 		width: 64%;
-	}
-
-	#picbutts {
 	}
 
 	#main {
