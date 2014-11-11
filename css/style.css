@@ -366,7 +366,16 @@
 /*********************************************************************************/
 
 	#punkface {
-		background-color: red;
+		height: 100%;
+		padding: 20px;
+	}
+
+	#subpunkface {
+		/*Super sketchy; gotta adjust the width every time I change the picture.  Awks.*/
+		width: 64%;
+	}
+
+	#picbutts {
 	}
 
 	#main {
