@@ -8,6 +8,8 @@ body {
 	background-size: auto, 100% 100%;
 }
 
+/* HEADER DEFINITION */
+
 /* NAV BAR */
 nav {
 	position: fixed;
@@ -26,5 +28,14 @@ nav {
 		font-size: 20px;
 		padding-left: 15px;
 		padding-right: 15px;
-		
+		text-decoration: none;
 	}
+
+	nav a:hover {
+		color: gray;
+	}
+
+/* HACKY THINGS */
+.spacer {
+	height: 60px;
+}
