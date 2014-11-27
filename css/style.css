@@ -13,6 +13,10 @@ img {
 	width: 100%;
 }
 
+a:hover {
+	color: red;
+}
+
 /* NAV BAR */
 nav {
 	position: fixed;
@@ -34,9 +38,6 @@ nav {
 		text-decoration: none;
 	}
 
-	nav a:hover {
-		color: gray;
-	}
 
 /* SECTIONS */
 .container {
