@@ -8,6 +8,10 @@ body {
 	background-size: auto, 100% 100%;
 }
 
+img {
+	/*height: 100%;*/
+	width: 100%;
+}
 
 /* NAV BAR */
 nav {
@@ -43,8 +47,23 @@ nav {
 	padding: 10px;
 }
 
+	/* ABOUT SECTION */
+	#blurb {
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	#imgself {
+		width: 50%;
+		height: 100%;
+		background: red;
+		float: right;
+	}
 
 /* VISIBILITY */
 .hide {
 	display: none;
 }
+
+
