@@ -8,7 +8,6 @@ body {
 	background-size: auto, 100% 100%;
 }
 
-/* HEADER DEFINITION */
 
 /* NAV BAR */
 nav {
@@ -35,7 +34,22 @@ nav {
 		color: gray;
 	}
 
+/* SECTIONS */
+.container {
+	position: fixed;
+	top: 60px;
+	height: 100%;
+	width: 96%; /* SUPER HACKY - no idea why text truncates at 100%... */
+	padding: 10px;
+}
+
 /* HACKY THINGS */
 .spacer {
 	height: 60px;
+}
+
+
+/* VISIBILITY */
+.hide {
+	display: none;
 }
