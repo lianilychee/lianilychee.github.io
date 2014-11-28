@@ -8,14 +8,10 @@ body {
 	background-size: auto, 100% 100%;
 }
 
-img {
-	/*height: 100%;*/
-	width: 100%;
-}
-
 a:hover {
 	color: red;
 }
+
 
 /* NAV BAR */
 nav {
@@ -55,12 +51,6 @@ nav {
 		float: left;
 	}
 
-	#imgself {
-		width: 50%;
-		height: 100%;
-		background: red;
-		float: right;
-	}
 
 /* VISIBILITY */
 .hide {
@@ -68,3 +58,21 @@ nav {
 }
 
 
+/* IMAGE RESIZING */
+
+.img-container {
+	position: relative;
+	overflow: hidden;
+
+	width: 50%;
+	height: 100%;
+	background: red;
+	float: right;
+}
+
+img.clipped {
+	display: block;
+	position: absolute;
+/*	height: 100%;
+	width: 100%;*/
+}

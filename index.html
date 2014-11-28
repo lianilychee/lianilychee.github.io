@@ -2,15 +2,18 @@
 
 <head>
 	<title>Liani Lye</title>
+
 	<script src='js/jquery.min.js'></script>
 	<script src='js/main.js'></script>
+	<script src='js/utils.js'></script>
+
 	<link rel='stylesheet' href='css/style.css' />
 </head>
 
 <body>
 	<!-- NAV BAR -->
 	<nav>
-		L I A N I L Y E <br>
+		L I A N I <b>L Y E</b> <br>
 		<a href='#about' id='aboutlink'> About</a>
 		<a href='#portfolio' id='portfoliolink'> Portfolio</a>
 	</nav>
@@ -18,18 +21,18 @@
 
 	<!-- SECTIONS -->
 
-	<div id='about' class='container hide'>
+	<div id='about' class='container'>
 
 		<div id='blurb'>
 			<h1> robotics engineer </h1>
 			<p> During the day, I'm a sophomore designing a "smarter" prosthetic arm for under-the-elbow amputees and building an autonomous trans-Atlantic sailboat for fun. But underneath all the tech jargon, I'm an LA transplant learning to navigate the intricacies of being a female, minority, solidly-blue-collar-background engineer in clean-cut New England. </p>
 		</div>
-		<div id='imgself'> <img src='images/self.jpg'> </div>
+		<div class='img-container'> <img class='clipped' src='images/self.jpg'> </div>
 
 	</div>
 
 
-	<div id='portfolio' class='container'>
+	<div id='portfolio' class='container hide'>
 
 		<h1> Portfolio </h1>
 
@@ -39,6 +42,9 @@
 		<a href id='work-software'> Software </a>
 		<a href id='work-elec'> Electrical </a>
 		<a href id='work-design'> Design </a>
+
+		<br>
+		grid stuff goes here
 
 	</div>
 
