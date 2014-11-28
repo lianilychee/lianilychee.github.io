@@ -71,7 +71,7 @@ nav {
 }
 
 img.clipped {
-	display: block;
+	/*display: block;*/
 	position: absolute;
 /*	height: 100%;
 	width: 100%;*/

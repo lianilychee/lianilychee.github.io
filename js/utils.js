@@ -3,11 +3,6 @@ var UTILS = {
 	// HANDLE IMAGE RESIZING
 	resizeImg: function() {
 
-		// Grab screen dimensions
-		screenWidth = $(document).width();
-		screenHeight = $(document).height();
-		console.log('Screen dimensions: ' + screenWidth, screenHeight);
-
 		// Grab div img-container dimensions
 		divWidth = $('.img-container').width();
 		divHeight = $('.img-container').height();
@@ -16,7 +11,34 @@ var UTILS = {
 		// Grab image dimensions
 		imgWidth = $('img').width();
 		imgHeight = $('img').height();
-		console.log(imgWidth, imgHeight);
+		console.log('Img dimensions: ' + imgWidth, imgHeight);
+
+		var ratio = imgHeight / imgWidth;
+
+		if (imgWidth >= divWidth && ratio <= 1) {
+			imgWidth = divWidth;
+			imgHeight = divHeight * ratio;
+
+		}
+
+
+
+
+
+
+
+
+		// Compute differences
+
+		if (imgWidth > divWidth) {
+			console.log('picture is larger than div');
+		}
+
+		// Cut margins
+		img.style.clip='rect(10px, auto, auto, 10px)';
+		// Remove margins
+		img.style.top='-10px';
+		img.style.left='-10px';
 
 		// img.style.left = '-' + x + 'px';
 		// img.style.top = '-' + y + 'px';
@@ -26,10 +48,17 @@ var UTILS = {
 		// 	img.parentNode.style.height = height + 'px';
 		// }
 
-	}
+	},
 
 	// HANDLE PAGE RESIZING
+	resizeWindow: function() {
 
+		// Grab screen dimensions
+		screenWidth = $(document).width();
+		screenHeight = $(document).height();
+		console.log('Screen dimensions: ' + screenWidth, screenHeight);
+
+	}
 
 	// HANDLE POP-UPS
 
