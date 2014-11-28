@@ -14,7 +14,7 @@ $(window).load( function() {
 		UTILS.resizeImg()
 	})
 
-	UTILS.resizeImg()
+	// UTILS.resizeImg()
 
 
 })
