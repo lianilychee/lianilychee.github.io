@@ -5,17 +5,16 @@
 	<link rel="stylesheet" href="style.css" />
 	<script src="../js/jquery.min.js"></script>
 	<script src='../js/freewall.js'></script>
-	
 </head>
 
 <body>
 
 	<div class="layout">
 		<div class="filter-items">
-			<div class="filter-label" >All block</div>
+			<div class="filter-label active">All block</div>
 			<div class="filter-label" data-filter=".size21">Block 2-1</div>
 			<div class="filter-label" data-filter=".size22">Block 2-2</div>
-			<div class="filter-label active" data-filter=".size23">Block 2-3</div>
+			<div class="filter-label" data-filter=".size23">Block 2-3</div>
 		</div>
 		<div id="freewall" class="free-wall"></div>
 	</div>
@@ -37,14 +36,14 @@
 			wall.reset({
 				selector: '.brick',
 				animate: true,
-				cellW: 160,
-				cellH: 160,
+				cellW: 150,
+				cellH: 150,
 				fixSize: 0,
 				onResize: function() {
 					wall.refresh();
 				}
 			});
-			wall.filter(".size23");
+			wall.filter(); // Set default filter selection
 			$(".filter-label").click(function() {
 				$(".filter-label").removeClass("active");
 				var filter = $(this).addClass('active').data('filter');
