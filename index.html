@@ -8,8 +8,12 @@
 	<script src='js/utils.js'></script>
 	<script src='js/main.js'></script>
 
-
 	<link rel='stylesheet' href='css/style.css' />
+
+	<style type='text/css'>
+		#grid-container { width: 80%; margin: auto; }
+		.item {	background: rgb(135, 199, 135); width: 320px; height: 320px; }
+	</style>
 </head>
 
 <body>
@@ -46,8 +50,20 @@
 		<a href id='work-design'> Design </a>
 
 		<br>
-		grid stuff goes here
+		<!-- GRID STUFF -->
+		<div id='grid-container'>
+			<div class='item'></div>
+			<div class='item'></div>
+			<div class='item'></div>
+		</div>
 
+		<script>
+			$(function() {
+				var wall = new freewall('#grid-container');
+				wall.fitWidth();
+			});
+		</script
+>
 	</div>
 
 
