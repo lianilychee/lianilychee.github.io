@@ -1,5 +1,6 @@
 $(window).load( function() {
 
+	/***** NAV SELECTION *****/
 
 	// When clicking on "Portfolio" in nav, hide About and show Portfolio.
 	$('#portfoliolink').on('click', function() {
@@ -14,7 +15,27 @@ $(window).load( function() {
 		UTILS.resizeImg()
 	})
 
-	// UTILS.resizeImg()
+
+	/***** FOLIO SELECTION *****/
+
+	$('#filter-all').on('click', function() {
+		$('.item').removeClass('hide')
+	});
+
+	$('#filter-design').on('click', function() {
+		$('.item').removeClass('hide')
+		$('.item').not('.tag-design').addClass('hide')
+	});
+
+	$('#filter-robo').on('click', function() {
+		$('.item').removeClass('hide')
+		$('.item').not('.tag-software').addClass('hide')
+	});
+
+	$('#filter-software').on('click', function() {
+		$('.item').removeClass('hide')
+		$('.item').not('.tag-software').addClass('hide')
+	});
 
 
 })

@@ -12,8 +12,13 @@ a:hover {
 	color: red;
 }
 
+/***** VISIBILITY *****/
+.hide {
+	display: none;
+}
 
-/* NAV BAR */
+
+/***** NAV BAR *****/
 nav {
 	position: fixed;
 	top: 0;
@@ -35,7 +40,7 @@ nav {
 	}
 
 
-/* SECTIONS */
+/***** SECTIONS *****/
 .section-container {
 	position: fixed;
 	top: 70px;
@@ -54,26 +59,29 @@ nav {
 	/* PORTFOLIO SECTIONS */
 	.grid-container {}
 
-		.grid-item{
+		.item{
+			height: 250px;
+			width: 400px;
 			background-color: red;
-			height: 300px;
-			width: 300px;
 		}
 
-			.grid-image {}
+		.item-image {
+			height: 195px;
+			width: 400px;
+			background-color: green;
+		}
 
-			.grid-title {}
+		.item-title {
+			background-color: white;
+			font-size: 30px;
+		}
 
-			.grid-caption{}
+		.item-blurb {
+			background-color: white;
+		}
 
 
-/* VISIBILITY */
-.hide {
-	display: none;
-}
-
-
-/* IMAGE RESIZING */
+/***** IMAGE RESIZING *****/
 
 .img-container {
 	position: relative;
