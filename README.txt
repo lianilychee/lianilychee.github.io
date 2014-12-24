@@ -1,1 +1,0 @@
-My second foray into web dev land.  Putting the skills I learned from Summer 14 to good use.
