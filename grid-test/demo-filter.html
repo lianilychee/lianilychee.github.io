@@ -1,12 +1,9 @@
 <html>
 
 <head>
-	<title>GRID-TEST</title>
+	<title>TILES BRANCH</title>
 	<link rel="stylesheet" href="style-test.css" />
 	<script src="../js/jquery.min.js"></script>
-	<script src='../js/freewall.js'></script>
-	<script src='grid-gen.js'></script>
-	<script src='main-test.js'></script>
 </head>
 
 <body>
@@ -29,52 +26,6 @@
 
 	</div>
 
-<!-- 
-
-	<script>
-		var temp = "<div class='brick {size}' style='background-color: {color}'><div class='cover'>{size}</div></div>";
-		
-		var sizes = ["size21", "size22", "size23"];
-
-		var html='', size='', color='', limitItem=5;
-		
-		for (var i = 0; i < limitItem; i++) {
-			size = sizes[sizes.length * Math.random() << 0];
-			color = "rgb(211, 84, 0)";
-			html += temp.replace(/\{size\}/g, size).replace("{color}", color);
-		}
-
-		$("#grid-container").html(html);
-		
-		$(function() {
-			var wall = new freewall("#grid-container");
-			wall.reset({
-				selector: '.brick',
-				animate: true,
-				cellW: 160,
-				cellH: 160,
-				fixSize: 0,
-				onResize: function() {
-					wall.refresh();
-				}
-			});
-			wall.filter(); // Set default filter selection
-			$(".filter-label").click(function() {
-				$(".filter-label").removeClass("active");
-				var filter = $(this).addClass('active').data('filter');
-				if (filter) {
-					wall.filter(filter);
-				} else {
-					wall.unFilter();
-				}
-			});
-
-			wall.fitWidth();
-		});
-	</script>
-
-
- -->
 </body>
 
 </html>
