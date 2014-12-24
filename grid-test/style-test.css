@@ -9,13 +9,22 @@
 
 /* TILE ITEM TEMPLATE */
 .item-container {
+	height: 250px;
+	width: 400px;
 	background-color: red;
 }
 
 .item-image {
+	height: 195px;
+	width: 400px;
 	background-color: green;
 }
 
-.item-snippet {
-	background-color: gray;
+.item-title {
+	background-color: white;
+	font-size: 30px;
+}
+
+.item-blurb {
+	background-color: white;
 }

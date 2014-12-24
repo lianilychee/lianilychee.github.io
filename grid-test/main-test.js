@@ -1,5 +1,7 @@
 $(window).load( function() {
 
+	// GRID FILTERING
+
 	$('#filter-all').on('click', function() {
 		$('.item-container').removeClass('inactive')
 	})
@@ -16,14 +18,7 @@ $(window).load( function() {
 		$('.item-container').not(".tag-software").addClass('inactive')
 	})
 
-	// When clicking on "About" in nav, hide Portfolio and show About.
-	// $('#aboutlink').on('click', function() {
-	// 	$('#about').removeClass('hide');
-	// 	$('#portfolio').addClass('hide');
-	// 	UTILS.resizeImg()
-	// })
 
-	// UTILS.resizeImg()
 
 
 })
