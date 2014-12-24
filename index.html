@@ -1,19 +1,15 @@
 <html>
 
 <head>
+
 	<title>Liani Lye</title>
 
 	<script src='js/jquery.min.js'></script>
-	<script src='js/freewall.js'></script>
 	<script src='js/utils.js'></script>
 	<script src='js/main.js'></script>
 
 	<link rel='stylesheet' href='css/style.css' />
 
-	<style type='text/css'>
-		#grid-container { width: 80%; margin: auto; }
-		.item {	background: rgb(135, 199, 135); width: 320px; height: 320px; }
-	</style>
 </head>
 
 <body>
@@ -27,7 +23,7 @@
 
 	<!-- SECTIONS -->
 
-	<div id='about' class='container hide'>
+	<div id='about' class='section-container hide'>
 
 		<div id='blurb'>
 			<h1> robotics engineer </h1>
@@ -38,10 +34,11 @@
 	</div>
 
 
-	<div id='portfolio' class='container'>
+	<div id='portfolio' class='section-container'>
 
 		<h1> Portfolio </h1>
 
+		<!-- FILTERING -->
 		<a href id='work-all'> All </a>
 		<a href id='work-robo'> Robotics </a>
 		<a href id='work-mech'> Mechanical </a>
@@ -50,20 +47,29 @@
 		<a href id='work-design'> Design </a>
 
 		<br>
-		<!-- GRID STUFF -->
+		<!-- GRID LAYOUT -->
 		<div id='grid-container'>
-			<div class='item'></div>
-			<div class='item'></div>
-			<div class='item'></div>
+
+			<div class='grid-item'>
+				<div class='grid-image'></div>
+				<div class='grid-title'> Title </div>
+				<div class='grid-caption'> Caption</div>
+			</div>
+
+			<div class='grid-item'>
+				<div class='grid-image'></div>
+				<div class='grid-title'></div>
+				<div class='grid-caption'></div>
+			</div>
+
+			<div class='grid-item'>
+				<div class='grid-image'></div>
+				<div class='grid-title'></div>
+				<div class='grid-caption'></div>
+			</div>
+
 		</div>
 
-		<script>
-			$(function() {
-				var wall = new freewall('#grid-container');
-				wall.fitWidth();
-			});
-		</script
->
 	</div>
 
 

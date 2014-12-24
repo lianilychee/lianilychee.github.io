@@ -1,10 +1,12 @@
 <html>
 
 <head>
-	<title>Freewall demo filter</title>
-	<link rel="stylesheet" href="style.css" />
+	<title>GRID-TEST</title>
+	<link rel="stylesheet" href="style-test.css" />
 	<script src="../js/jquery.min.js"></script>
 	<script src='../js/freewall.js'></script>
+	<script src='grid-gen.js'></script>
+	<script src='main-test.js'></script>
 </head>
 
 <body>
@@ -16,28 +18,41 @@
 			<div class="filter-label" data-filter=".size22">Block 2-2</div>
 			<div class="filter-label" data-filter=".size23">Block 2-3</div>
 		</div>
-		<div id="freewall" class="free-wall"></div>
+
+
+
+		<div id='grid-container'>		
+			<div class='item'> TILE 1 </div>
+			<div class='item'> TILE 2 </div>
+		</div>
+
+
 	</div>
+
+<!-- 
 
 	<script>
 		var temp = "<div class='brick {size}' style='background-color: {color}'><div class='cover'>{size}</div></div>";
+		
 		var sizes = ["size21", "size22", "size23"];
 
-		var html = '', size = '', color = '', limitItem = 10;
-		for (var i = 0; i < limitItem; ++i) {
+		var html='', size='', color='', limitItem=5;
+		
+		for (var i = 0; i < limitItem; i++) {
 			size = sizes[sizes.length * Math.random() << 0];
 			color = "rgb(211, 84, 0)";
 			html += temp.replace(/\{size\}/g, size).replace("{color}", color);
 		}
-		$("#freewall").html(html);
+
+		$("#grid-container").html(html);
 		
 		$(function() {
-			var wall = new freewall("#freewall");
+			var wall = new freewall("#grid-container");
 			wall.reset({
 				selector: '.brick',
 				animate: true,
-				cellW: 150,
-				cellH: 150,
+				cellW: 160,
+				cellH: 160,
 				fixSize: 0,
 				onResize: function() {
 					wall.refresh();
@@ -57,6 +72,9 @@
 			wall.fitWidth();
 		});
 	</script>
+
+
+ -->
 </body>
 
 </html>
