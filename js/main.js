@@ -12,7 +12,7 @@ $(window).load( function() {
 	$('#aboutlink').on('click', function() {
 		$('#about').removeClass('hide');
 		$('#portfolio').addClass('hide');
-		UTILS.resizeImg()
+		// UTILS.resizeImg()
 	})
 
 
@@ -29,7 +29,7 @@ $(window).load( function() {
 
 	$('#filter-robo').on('click', function() {
 		$('.item').removeClass('hide')
-		$('.item').not('.tag-software').addClass('hide')
+		$('.item').not('.tag-robo').addClass('hide')
 	});
 
 	$('#filter-software').on('click', function() {

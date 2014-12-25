@@ -1,6 +1,4 @@
 @charset 'UTF-8';
-@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
-@import url('font-awesome.min.css');
 
 body {
 	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
@@ -12,7 +10,6 @@ a:hover {
 	color: red;
 }
 
-/***** VISIBILITY *****/
 .hide {
 	display: none;
 }
@@ -42,12 +39,29 @@ nav {
 
 /***** SECTIONS *****/
 .section-container {
-	position: fixed;
-	top: 70px;
 	height: 100%;
-	width: 96%; /* SUPER HACKY - no idea why text truncates at 100%... */
+	width: 96%;
+	margin-top: 70px;
+	padding-top: 100px;
 	padding: 10px;
 }
+
+	#about {
+		position: fixed;
+		height: 100%;
+		width: 96%;
+		margin-top: 70px;
+		padding-top: 100px;
+		padding: 10px;
+	}
+
+	#portfolio {
+		height: 100%;
+		width: 100%;
+		margin-top: 70px;
+		padding-top: 100px;
+		padding: 10px;
+	}
 
 	/* ABOUT SECTION */
 	#blurb {
@@ -60,6 +74,7 @@ nav {
 	.grid-container {}
 
 		.item{
+			margin-bottom: 20px;
 			height: 250px;
 			width: 400px;
 			background-color: red;
@@ -81,8 +96,24 @@ nav {
 		}
 
 
-/***** IMAGE RESIZING *****/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!! SHELVE FOR LATER !!!!!!!!!!!!!! */
+
+
+/***** IMAGE RESIZING *****/
 .img-container {
 	position: relative;
 	overflow: hidden;
