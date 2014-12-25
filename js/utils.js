@@ -1,6 +1,6 @@
 var UTILS = {
 
-	// HANDLE IMAGE RESIZING
+	/* // HANDLE IMAGE RESIZING
 	resizeImg: function() {
 
 		// Grab div img-container dimensions
@@ -20,13 +20,6 @@ var UTILS = {
 			imgHeight = divHeight * ratio;
 
 		}
-
-
-
-
-
-
-
 
 		// Compute differences
 
@@ -60,6 +53,6 @@ var UTILS = {
 
 	}
 
-	// HANDLE POP-UPS
+	// HANDLE POP-UPS */
 
 }
