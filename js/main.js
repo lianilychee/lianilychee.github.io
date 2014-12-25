@@ -1,14 +1,12 @@
 $(window).load( function() {
 
 	/***** NAV SELECTION *****/
-
-	// When clicking on "Portfolio" in nav, hide About and show Portfolio.
+	// When a section is clicked, hide the other one.
 	$('#portfoliolink').on('click', function() {
 		$('#about').addClass('hide');
 		$('#portfolio').removeClass('hide');
 	})
 
-	// When clicking on "About" in nav, hide Portfolio and show About.
 	$('#aboutlink').on('click', function() {
 		$('#about').removeClass('hide');
 		$('#portfolio').addClass('hide');

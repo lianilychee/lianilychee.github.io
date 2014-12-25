@@ -23,7 +23,7 @@ nav {
 
 	width: 100%;
 	height: 55px;
-	/*background: white;*/
+	background: white;
 
 	padding-top: 15px;
 	text-align: center;
@@ -46,17 +46,9 @@ nav {
 	padding: 10px;
 }
 
-	#about {
-		position: fixed;
-	}
+	#about { position: fixed; }
 
-	#portfolio {
-		height: 100%;
-		width: 100%;
-		margin-top: 70px;
-		padding-top: 100px;
-		padding: 10px;
-	}
+	#portfolio { }
 
 	/* ABOUT SECTION */
 	#blurb {
