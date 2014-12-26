@@ -24,7 +24,6 @@ var GRID = {
 			GRID.render();
 		});
 
-
 	},
 
 
@@ -36,7 +35,7 @@ var GRID = {
 		GRID.colCount = Math.floor(GRID.width/400);
 		GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; // need to mod this to account for even divisibility
 
-		// GRID.update();
+		GRID.update();
 	},
 
 
@@ -47,20 +46,6 @@ var GRID = {
 
 		GRID.render();  // redraw tiles here
 	},
-
-
-	// getContent: function() {
-	// 	console.log('firing getContent()');
-
-	// 	tileCount = 3;
-
-	// 	for (var i = 0; i < tileCount; i++) {
-	// 		GRID.tiles.push(1);
-	// 	}
-
-	// 	console.log(GRID.tiles);
-
-	// },
 
 
 	/* Render the grid. */
@@ -75,44 +60,16 @@ var GRID = {
 
 		testTable = '<table>';
 
-		console.log('right before for loop');
-
-		// for (var i=0; i<3; i++) {
-		// 	console.log('hello');
-		// };
-
-
-		console.log('cut the bullshit ' + GRID.rowCount);
 		for (var i = 0; i < GRID.rowCount; i++) {
-			console.log('in for loop');
 
 			testTable += '<tr>'; // start row
 
 			for (var j = 0; j < GRID.colCount; j++) {
-
 				testTable += '<td>' + '0' + '</td>';
-
 			};
 
 			testTable += '</tr>'; // end row
 		};
-
-
-
-		// for (var i = 0; i < data.length; i++) {
-
-		// 	testTable += '<tr>'; // add a rows
-
-		// 	for (var j = 0, rowLen = data[i].length; j < rowLen; j++) {
-
-		// 		testTable += '<td>' + data[i][j] + '</td>';
-		// 	}
-
-		// 	testTable += '</tr>';
-		// }
-
-		console.log('right after for loop');
-
 
 		testTable += '</table>';
 
