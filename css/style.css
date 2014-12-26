@@ -15,6 +15,16 @@ a:hover {
 }
 
 
+
+
+
+table, td { border: 1px solid black; }
+
+
+
+
+
+
 /***** NAV BAR *****/
 nav {
 	position: fixed;
