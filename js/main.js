@@ -42,7 +42,6 @@ $(document).ready(function() {
 	GRID.onLoad('#grid-container');
 
 	$(window).resize( function() {
-		console.log('window resized!!');
 		GRID.onResize();
 	})
 
