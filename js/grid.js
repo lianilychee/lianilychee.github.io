@@ -18,11 +18,8 @@ var GRID = {
 			if (GRID.tiles.length % GRID.colCount == 0) { GRID.rowCount = GRID.tiles.length / GRID.colCount; }
 			else { GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; };
 
-			console.log('cols: ' + GRID.colCount + ', rows: ' + GRID.rowCount);
-
 			GRID.render();
 		});
-
 	},
 
 
@@ -46,6 +43,40 @@ var GRID = {
 		// remove all tiles here
 
 		GRID.render();  // redraw tiles here
+	},
+
+
+	/* Create an info tile. */
+	createTile: function() {
+
+		console.log(CONTENT);
+
+		item = '<div class="item ' + String(CONTENT[1][3]) + '">';
+
+		itemImage = '<div class="item-image"></div>';
+		itemTitle = '<div class="item-title">' + CONTENT[1][1] + '</div>';
+		itemBlurb = '<div class="item-blurb">' + CONTENT[1][2] + '</div>';
+
+		item += itemTitle;
+		item += itemBlurb;
+
+		item += '</div>'
+
+		$('#test-tile-div').html(item);
+
+
+
+
+				// <div class='item tag-design'>
+				// 	<div class='item-image'></div>
+				// 	<div class='item-title'> Design </div>
+				// 	<div class='item-blurb'> blurb </div>
+				// </div>
+
+
+
+
+
 	},
 
 

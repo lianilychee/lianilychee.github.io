@@ -2,6 +2,9 @@
 $(document).ready(function() {
 
 
+	GRID.createTile();
+
+
 	/***** SELECTION *****/
 
 	// NAV BAR SELECTION. 
