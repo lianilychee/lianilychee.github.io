@@ -49,34 +49,17 @@ var GRID = {
 	/* Create an info tile. */
 	createTile: function() {
 
-		console.log(CONTENT);
-
 		item = '<div class="item ' + String(CONTENT[1][3]) + '">';
 
 		itemImage = '<div class="item-image"></div>';
 		itemTitle = '<div class="item-title">' + CONTENT[1][1] + '</div>';
 		itemBlurb = '<div class="item-blurb">' + CONTENT[1][2] + '</div>';
 
-		item += itemTitle;
-		item += itemBlurb;
+		item += itemImage + itemTitle + itemBlurb + '</div>'
 
-		item += '</div>'
+		return item;
 
-		$('#test-tile-div').html(item);
-
-
-
-
-				// <div class='item tag-design'>
-				// 	<div class='item-image'></div>
-				// 	<div class='item-title'> Design </div>
-				// 	<div class='item-blurb'> blurb </div>
-				// </div>
-
-
-
-
-
+		// $('#test-tile-div').html(item);
 	},
 
 
@@ -89,7 +72,7 @@ var GRID = {
 
 			testTable += '<tr>'; // start row
 
-			for (var j = 0; j < GRID.colCount; j++) { testTable += '<td>' + '0' + '</td>'; };
+			for (var j = 0; j < GRID.colCount; j++) { testTable += '<td>' + GRID.createTile() + '</td>'; };
 
 			testTable += '</tr>'; // end row
 		};
