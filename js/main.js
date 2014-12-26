@@ -1,6 +1,8 @@
 // $(window).load( function() {
 $(document).ready(function() {
 
+	GRID.getContent();
+
 	/***** SELECTION *****/
 
 	// NAV BAR SELECTION. 
