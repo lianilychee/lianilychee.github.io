@@ -58,9 +58,7 @@ var GRID = {
 
 			testTable += '<tr>'; // start row
 
-			for (var j = 0; j < GRID.colCount; j++) {
-				testTable += '<td>' + '0' + '</td>';
-			};
+			for (var j = 0; j < GRID.colCount; j++) { testTable += '<td>' + '0' + '</td>'; };
 
 			testTable += '</tr>'; // end row
 		};
@@ -68,8 +66,6 @@ var GRID = {
 		testTable += '</table>';
 
 		$('#test-table-div').html(testTable);
-
-
 	}
 
 }
