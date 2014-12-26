@@ -15,16 +15,11 @@ var GRID = {
 			
 			GRID.colCount = Math.floor(GRID.width/400);
 
-			if (GRID.tiles.length % GRID.colCount == 0) {
-				GRID.rowCount = GRID.tiles.length / GRID.colCount;
-			}
-			else {
-				GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1;
-			}
+			if (GRID.tiles.length % GRID.colCount == 0) { GRID.rowCount = GRID.tiles.length / GRID.colCount; }
+			else { GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; };
 
 			console.log('cols: ' + GRID.colCount + ', rows: ' + GRID.rowCount);
 
-			console.log('render() being called from onLoad');
 			GRID.render();
 		});
 
@@ -37,7 +32,9 @@ var GRID = {
 		GRID.height = $(GRID.elementId).height();
 
 		GRID.colCount = Math.floor(GRID.width/400);
-		GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; // need to mod this to account for even divisibility
+
+		if (GRID.tiles.length % GRID.colCount == 0) { GRID.rowCount = GRID.tiles.length / GRID.colCount; }
+		else { GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; };
 
 		GRID.update();
 	},
@@ -54,13 +51,6 @@ var GRID = {
 
 	/* Render the grid. */
 	render: function() {
-		console.log('firing render()');
-
-		poop = GRID.rowCount;
-
-		// FUTZING AROUND WITH CREATING A TABLE W/ JQUERY
-
-		data = [ [1,2,3], [4,5,6], [7,8,9] ];
 
 		testTable = '<table>';
 
