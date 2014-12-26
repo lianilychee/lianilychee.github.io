@@ -12,11 +12,15 @@ var GRID = {
 		$(window).load( function() {
 			GRID.width = $(GRID.elementId).width();
 			GRID.height = $(GRID.elementId).height();
-			// console.log(GRID.width, GRID.height);
 			
-			// GRID.rowCount = Math.floor(GRID.height/250);
 			GRID.colCount = Math.floor(GRID.width/400);
-			GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; // need to mod this to account for even divisibility
+
+			if (GRID.tiles.length % GRID.colCount == 0) {
+				GRID.rowCount = GRID.tiles.length / GRID.colCount;
+			}
+			else {
+				GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1;
+			}
 
 			console.log('cols: ' + GRID.colCount + ', rows: ' + GRID.rowCount);
 
