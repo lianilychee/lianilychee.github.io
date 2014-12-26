@@ -1,7 +1,7 @@
 var GRID = {
 
 	/* Initialization. */
-	tiles: [],
+	tiles: [1,1,1,1],
 
 
 	/* Grab HTML element dimensions. */
@@ -17,11 +17,14 @@ var GRID = {
 			// GRID.rowCount = Math.floor(GRID.height/250);
 			GRID.colCount = Math.floor(GRID.width/400);
 			GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; // need to mod this to account for even divisibility
-			// console.log('cols: ' + GRID.colCount + ', rows: ' + GRID.rowCount);
+
+			console.log('cols: ' + GRID.colCount + ', rows: ' + GRID.rowCount);
+
+			console.log('render() being called from onLoad');
+			GRID.render();
 		});
 
-		console.log('render() being called from onLoad');
-		GRID.render();
+
 	},
 
 
@@ -33,7 +36,7 @@ var GRID = {
 		GRID.colCount = Math.floor(GRID.width/400);
 		GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; // need to mod this to account for even divisibility
 
-		GRID.update();
+		// GRID.update();
 	},
 
 
@@ -74,26 +77,25 @@ var GRID = {
 
 		console.log('right before for loop');
 
-		for (var i=0; i<3; i++) {
-			console.log('hello');
-		};
-
-
-
-
-		// for (var i = 0; i < GRID.rowCount; i++) {
-		// 	console.log('in for loop');
-
-		// 	testTable += '<tr>'; // start row
-
-		// 	for (var j = 0; j < GRID.colCount; j++) {
-
-		// 		testTable += '<td>' + '1' + '</td>';
-
-		// 	};
-
-		// 	testTable += '</tr>'; // end row
+		// for (var i=0; i<3; i++) {
+		// 	console.log('hello');
 		// };
+
+
+		console.log('cut the bullshit ' + GRID.rowCount);
+		for (var i = 0; i < GRID.rowCount; i++) {
+			console.log('in for loop');
+
+			testTable += '<tr>'; // start row
+
+			for (var j = 0; j < GRID.colCount; j++) {
+
+				testTable += '<td>' + '0' + '</td>';
+
+			};
+
+			testTable += '</tr>'; // end row
+		};
 
 
 
