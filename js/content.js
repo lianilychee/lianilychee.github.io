@@ -1,53 +1,50 @@
-var CONTENT = [
+var CONTENT = {
 
-	/* TEMPLATE
-	item = [
-		image,
-		title,
-		blurb,
-		tags
-	], */
+	filtered: [],
 
-	item1 = [
-		'image',
-		'Unclassified',
-		'blurb',
-		[]
+	master: [	item1 = [	'image',
+							'Unclassified',
+							'blurb',
+							[]	],
+
+				item2 = [	'image',
+							'Design',
+							'blurb',
+							['tag-design']	],
+
+				item3 = [	'image',
+							'Software, Robo',
+							'blurb',
+							['tag-software', 'tag-robo']	],
+
+				item4 = [	'image',
+							'Design, Robo',
+							'blurb',
+							['tag-design', 'tag-robo']	],	
+
+				item5 = [	'image',
+							'Robo',
+							'blurb',
+							['tag-robo']	],
+
+				item6 = [	'image',
+							'Unclassified',
+							'blurb',
+							[]	]
 	],
 
-	item2 = [
-		'image',
-		'Design',
-		'blurb',
-		['tag-design']
-	],
 
-	item3 = [
-		'image',
-		'Software, Robo',
-		'blurb',
-		['tag-software', 'tag-robo']
-	],
+	/* Upon filter selection, update list of content to be displayed. */
+	downselect: function(tag) {
 
-	item4 = [
-		'image',
-		'Design, Robo',
-		'blurb',
-		['tag-design', 'tag-robo']
-	],	
+		CONTENT.filtered = [];
 
-	item5 = [
-		'image',
-		'Robo',
-		'blurb',
-		['tag-robo']
-	],
+		for (var i = 0; i < CONTENT.master.length; i++) {
+			if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
+				CONTENT.filtered.push( CONTENT.master[i] );
+			}
+		}
+	}
 
-	item6 = [
-		'image',
-		'Unclassified',
-		'blurb',
-		[]
-	]
 
-]
+}

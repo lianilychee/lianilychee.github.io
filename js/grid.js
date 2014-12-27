@@ -1,7 +1,7 @@
 var GRID = {
 
 	/* Initialization. */
-	tiles: [1,1,1,1],
+	content: CONTENT.master,
 
 
 	/* Grab HTML element dimensions. */
@@ -15,8 +15,8 @@ var GRID = {
 			
 			GRID.colCount = Math.floor(GRID.width/400);
 
-			if (GRID.tiles.length % GRID.colCount == 0) { GRID.rowCount = GRID.tiles.length / GRID.colCount; }
-			else { GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; };
+			if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
+			else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
 
 			GRID.render();
 		});
@@ -30,8 +30,8 @@ var GRID = {
 
 		GRID.colCount = Math.floor(GRID.width/400);
 
-		if (GRID.tiles.length % GRID.colCount == 0) { GRID.rowCount = GRID.tiles.length / GRID.colCount; }
-		else { GRID.rowCount = Math.floor(GRID.tiles.length/GRID.colCount) + 1; };
+		if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
+		else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
 
 		GRID.update();
 	},
@@ -49,17 +49,17 @@ var GRID = {
 	/* Create an info tile. */
 	createTile: function() {
 
-		item = '<div class="item ' + String(CONTENT[1][3]) + '">';
+		i = 4;
+
+		item = '<div class="item ' + String(GRID.content[i][3]) + '">';
 
 		itemImage = '<div class="item-image"></div>';
-		itemTitle = '<div class="item-title">' + CONTENT[1][1] + '</div>';
-		itemBlurb = '<div class="item-blurb">' + CONTENT[1][2] + '</div>';
+		itemTitle = '<div class="item-title">' + GRID.content[i][1] + '</div>';
+		itemBlurb = '<div class="item-blurb">' + GRID.content[i][2] + '</div>';
 
 		item += itemImage + itemTitle + itemBlurb + '</div>'
 
 		return item;
-
-		// $('#test-tile-div').html(item);
 	},
 
 
@@ -79,7 +79,8 @@ var GRID = {
 
 		testTable += '</table>';
 
-		$('#test-table-div').html(testTable);
+		$('#grid-container').html(testTable);
+
 	}
 
 }
