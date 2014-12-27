@@ -47,15 +47,13 @@ var GRID = {
 
 
 	/* Create an info tile. */
-	createTile: function() {
+	createTile: function(k) {
 
-		i = 4;
-
-		item = '<div class="item ' + String(GRID.content[i][3]) + '">';
+		item = '<div class="item ' + String(GRID.content[k][3]) + '">';
 
 		itemImage = '<div class="item-image"></div>';
-		itemTitle = '<div class="item-title">' + GRID.content[i][1] + '</div>';
-		itemBlurb = '<div class="item-blurb">' + GRID.content[i][2] + '</div>';
+		itemTitle = '<div class="item-title">' + GRID.content[k][1] + '</div>';
+		itemBlurb = '<div class="item-blurb">' + GRID.content[k][2] + '</div>';
 
 		item += itemImage + itemTitle + itemBlurb + '</div>'
 
@@ -66,20 +64,22 @@ var GRID = {
 	/* Render the grid. */
 	render: function() {
 
-		testTable = '<table>';
+		table = '<table>';
 
 		for (var i = 0; i < GRID.rowCount; i++) {
+			table += '<tr>'; // start row
 
-			testTable += '<tr>'; // start row
+			for (var j = 0; j < GRID.colCount; j++) { 
+				k = i+j;
+				table += '<td>' + GRID.createTile(k) + '</td>'; 
+			};
 
-			for (var j = 0; j < GRID.colCount; j++) { testTable += '<td>' + GRID.createTile() + '</td>'; };
-
-			testTable += '</tr>'; // end row
+			table += '</tr>'; // end row
 		};
 
-		testTable += '</table>';
+		table += '</table>';
 
-		$('#grid-container').html(testTable);
+		$('#grid-container').html(table);
 
 	}
 

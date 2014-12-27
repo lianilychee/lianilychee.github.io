@@ -1,9 +1,10 @@
 @charset 'UTF-8';
 
 body {
-	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
+/*	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
 	background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;
+	background-size: auto, 100% 100%;*/
+	background-color: gray;
 }
 
 a:hover {

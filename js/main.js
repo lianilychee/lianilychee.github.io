@@ -18,24 +18,24 @@ $(document).ready(function() {
 
 	// FOLIO SELECTION
 	$('#filter-all').on('click', function() {
-		$('.item').removeClass('hide');
+		// $('.item').removeClass('hide');
 	});
 
 	$('#filter-design').on('click', function() {
-		$('.item').removeClass('hide');
-		$('.item').not('.tag-design').addClass('hide');
+		// $('.item').removeClass('hide');
+		// $('.item').not('.tag-design').addClass('hide');
 		CONTENT.downselect('tag-design');
 	});
 
 	$('#filter-robo').on('click', function() {
-		$('.item').removeClass('hide');
-		$('.item').not('.tag-robo').addClass('hide');
+		// $('.item').removeClass('hide');
+		// $('.item').not('.tag-robo').addClass('hide');
 		CONTENT.downselect('tag-robo');
 	});
 
 	$('#filter-software').on('click', function() {
-		$('.item').removeClass('hide');
-		$('.item').not('.tag-software').addClass('hide');
+		// $('.item').removeClass('hide');
+		// $('.item').not('.tag-software').addClass('hide');
 		CONTENT.downselect('tag-software');
 	});
 
