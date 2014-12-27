@@ -13,7 +13,6 @@ $(document).ready(function() {
 	$('#aboutlink').on('click', function() {
 		$('#about').removeClass('hide');
 		$('#portfolio').addClass('hide');
-		// UTILS.resizeImg()
 	})
 
 
@@ -25,22 +24,22 @@ $(document).ready(function() {
 	$('#filter-design').on('click', function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-design').addClass('hide');
-		CONTENT.downselect('tag-design');
-		console.log(CONTENT.filtered);
+		GRID.update('tag-design');
+		console.log('');
 	});
 
 	$('#filter-robo').on('click', function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-robo').addClass('hide');
-		CONTENT.downselect('tag-robo');
-		console.log(CONTENT.filtered);
+		GRID.update('tag-robo');
+		console.log('');		
 	});
 
 	$('#filter-software').on('click', function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-software').addClass('hide');
-		CONTENT.downselect('tag-software');
-		console.log(CONTENT.filtered);
+		GRID.update('tag-software');
+		console.log('');
 	});
 
 

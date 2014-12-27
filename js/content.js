@@ -35,16 +35,18 @@ var CONTENT = {
 
 
 	/* Upon filter selection, updates list of content to be displayed. */
-	downselect: function(tag) {
+	// downselect: function(tag) {
 
-		CONTENT.filtered = []; // Clear the filtered list
+	// 	CONTENT.filtered = []; // Clear the filtered list
 
-		for (var i = 0; i < CONTENT.master.length; i++) {
-			if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
-				CONTENT.filtered.push( CONTENT.master[i] );
-			}
-		}
-	}
+	// 	for (var i = 0; i < CONTENT.master.length; i++) {
+	// 		if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
+	// 			CONTENT.filtered.push( CONTENT.master[i] );
+	// 		}
+	// 	}
+
+	// 	return CONTENT.filtered;
+	// }
 
 
 }
