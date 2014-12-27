@@ -38,61 +38,28 @@ var GRID = {
 	},
 
 
-	/* Upon filter selection, update list of visible tiles. */
-	update: function(tag) {
+	/* Takes in filter selection and updates list of visible tiles. */
+	updateInfo: function(tag) {
 
-		console.log('GRID.update(' +tag+ ') firing');
-		// remove all tiles here
+		GRID.filtered = [];
 
-		GRID.filtered = [];  // Make sure we're starting w a clean slate.
-
-		for (var i = 0; i < GRID.content.length; i++) {
-			if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
-				GRID.filtered.push( GRID.content[i] );
-			}
+		if (tag == null) {
+			return GRID.content;
 		}
-
-		// GRID.render(tag);  // redraw tiles here
-
-
-
-
-
-
-
-				// downselect: function(tag) {
-
-				// 	CONTENT.filtered = []; // Clear the filtered list
-
-				// 	for (var i = 0; i < CONTENT.master.length; i++) {
-				// 		if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
-				// 			CONTENT.filtered.push( CONTENT.master[i] );
-				// 		}
-				// 	}
-
-				// 	return CONTENT.filtered;
-				// }
-
-
-
-
-
-
-
+		else {
+			// console.log('return some other info');
+			for (var i = 0; i < GRID.content.length; i++) {
+				if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
+					GRID.filtered.push( GRID.content[i] );
+				}
+			};
+			return GRID.filtered;
+		};
 	},
 
 
 	/* Create an info tile. */
 	createTile: function(k, tag) {
-
-		// filteredContent = CONTENT.downselect(tag);
-		// console.log(filteredContent);
-
-		// item = '<div class="item ' + String(filteredContent[k][3]) + '">';
-
-		// itemImage = '<div class="item-image"></div>';
-		// itemTitle = '<div class="item-title">' + filteredContent[k][1] + '</div>';
-		// itemBlurb = '<div class="item-blurb">' + filteredContent[k][2] + '</div>';
 
 		item = '<div class="item ' + String(GRID.content[k][3]) + '">';
 
@@ -108,6 +75,8 @@ var GRID = {
 
 	/* Render the grid. */
 	render: function(tag) {
+
+		console.log( GRID.updateInfo(tag) );
 
 		table = '<table>';
 

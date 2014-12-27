@@ -1,6 +1,6 @@
-var CONTENT = {
+/* CONTENT contains all the info to be displayed. */
 
-	filtered: [],
+var CONTENT = {
 
 	master: [	item1 = [	'image',
 							'Unclassified',
@@ -32,21 +32,4 @@ var CONTENT = {
 							'blurb',
 							[]	]
 	],
-
-
-	/* Upon filter selection, updates list of content to be displayed. */
-	// downselect: function(tag) {
-
-	// 	CONTENT.filtered = []; // Clear the filtered list
-
-	// 	for (var i = 0; i < CONTENT.master.length; i++) {
-	// 		if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
-	// 			CONTENT.filtered.push( CONTENT.master[i] );
-	// 		}
-	// 	}
-
-	// 	return CONTENT.filtered;
-	// }
-
-
 }

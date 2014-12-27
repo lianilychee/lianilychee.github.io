@@ -18,32 +18,23 @@ $(document).ready(function() {
 
 	// FOLIO SELECTION
 	$('#filter-all').on('click', function() {
-		// $('.item').removeClass('hide');
+		GRID.render();
 	});
 
 	$('#filter-design').on('click', function() {
-		// $('.item').removeClass('hide');
-		// $('.item').not('.tag-design').addClass('hide');
-		GRID.update('tag-design');
-		console.log('');
+		GRID.render('tag-design');
 	});
 
 	$('#filter-robo').on('click', function() {
-		// $('.item').removeClass('hide');
-		// $('.item').not('.tag-robo').addClass('hide');
-		GRID.update('tag-robo');
-		console.log('');		
+		GRID.render('tag-robo');
 	});
 
 	$('#filter-software').on('click', function() {
-		// $('.item').removeClass('hide');
-		// $('.item').not('.tag-software').addClass('hide');
-		GRID.update('tag-software');
-		console.log('');
+		GRID.render('tag-software');
 	});
 
 
-	// Call onLoad behavior of GRID.
+	// Call onLoad behavior of GRID; renders all content upon load.
 	GRID.onLoad('#grid-container');
 
 	$(window).resize( function() {
