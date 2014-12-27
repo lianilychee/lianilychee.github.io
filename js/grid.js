@@ -13,7 +13,8 @@ var GRID = {
 			GRID.width = $(GRID.elementId).width();
 			GRID.height = $(GRID.elementId).height();
 			
-			GRID.colCount = Math.floor(GRID.width/400);
+			// GRID.colCount = Math.floor(GRID.width/400);
+			GRID.colCount = Math.floor(GRID.width/200);
 
 			if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
 			else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };

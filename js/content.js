@@ -34,7 +34,7 @@ var CONTENT = {
 	],
 
 
-	/* Upon filter selection, update list of content to be displayed. */
+	/* Upon filter selection, updates list of content to be displayed. */
 	downselect: function(tag) {
 
 		CONTENT.filtered = []; // Clear the filtered list

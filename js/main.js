@@ -16,6 +16,7 @@ $(document).ready(function() {
 		// UTILS.resizeImg()
 	})
 
+
 	// FOLIO SELECTION
 	$('#filter-all').on('click', function() {
 		// $('.item').removeClass('hide');
@@ -25,18 +26,21 @@ $(document).ready(function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-design').addClass('hide');
 		CONTENT.downselect('tag-design');
+		console.log(CONTENT.filtered);
 	});
 
 	$('#filter-robo').on('click', function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-robo').addClass('hide');
 		CONTENT.downselect('tag-robo');
+		console.log(CONTENT.filtered);
 	});
 
 	$('#filter-software').on('click', function() {
 		// $('.item').removeClass('hide');
 		// $('.item').not('.tag-software').addClass('hide');
 		CONTENT.downselect('tag-software');
+		console.log(CONTENT.filtered);
 	});
 
 

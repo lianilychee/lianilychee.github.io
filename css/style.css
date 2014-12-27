@@ -65,20 +65,20 @@ nav {
 
 		.item{
 			margin-bottom: 20px;
-			height: 250px;
-			width: 400px;
+			height: 125px; /*250px;*/
+			width: 200px; /*400px;*/
 			background-color: red;
 		}
 
 		.item-image {
-			height: 195px;
-			width: 400px;
+			height: 92px; /*195px;*/
+			width: 200px; /*400px;*/
 			background-color: green;
 		}
 
 		.item-title {
 			background-color: white;
-			font-size: 30px;
+			font-size: 15px; /*30px;*/
 		}
 
 		.item-blurb {
