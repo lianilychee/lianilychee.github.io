@@ -13,8 +13,7 @@ var GRID = {
 			GRID.width = $(GRID.elementId).width();
 			GRID.height = $(GRID.elementId).height();
 			
-			// GRID.colCount = Math.floor(GRID.width/400);
-			GRID.colCount = Math.floor(GRID.width/200);
+			GRID.colCount = Math.floor(GRID.width/400);
 
 			if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
 			else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
@@ -34,7 +33,7 @@ var GRID = {
 		if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
 		else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
 
-		GRID.updateInfo();
+		GRID.render();
 	},
 
 
@@ -64,14 +63,13 @@ var GRID = {
 		tiles = [];
 
 		for (var i = 0; i < info.length; i++) {
-
 			item = '<div class="item ' + String(info[i][3]) + '">';
 
 			itemImage = '<div class="item-image"></div>';
 			itemTitle = '<div class="item-title">' + info[i][1] + '</div>';
 			itemBlurb = '<div class="item-blurb">' + info[i][2] + '</div>';
 
-			item += itemImage + itemTitle + itemBlurb + '</div>'
+			item += itemImage + itemTitle + itemBlurb + '</div>';
 
 			tiles.push( item );
 		}
@@ -83,13 +81,8 @@ var GRID = {
 	/* Render the grid. */
 	render: function(tag) {
 
-		// Acquire content to display.
-		info = GRID.updateInfo(tag);
-		cells = info.length;
-
-		// Acquire tiles to display.
-		tiles = GRID.createTile(info);
-		// console.log(tiles.length);
+		info = GRID.updateInfo(tag);	// Acquire content to display.
+		tiles = GRID.createTile(info);	// Acquire tiles to display.
 
 		// Insert content into table.
 		table = '<table>';
@@ -108,7 +101,6 @@ var GRID = {
 		table += '</table>';
 
 		$('#grid-container').html(table);
-
 	}
 
 }

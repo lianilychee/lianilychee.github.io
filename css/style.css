@@ -1,10 +1,10 @@
 @charset 'UTF-8';
 
 body {
-/*	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
+	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
 	background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;*/
-	background-color: gray;
+	background-size: auto, 100% 100%;
+	/*background-color: gray;*/
 }
 
 a:hover {
@@ -65,20 +65,25 @@ nav {
 
 		.item{
 			margin-bottom: 20px;
-			height: 125px; /*250px;*/
-			width: 200px; /*400px;*/
+			height: 250px;
+			width: 400px;
+			/*height: 125px; */
+			/*width: 200px;*/
 			background-color: red;
 		}
 
 		.item-image {
-			height: 92px; /*195px;*/
-			width: 200px; /*400px;*/
+			height: 195px;
+			width: 400px;
+			/*height: 92px;*/
+			/*width: 200px;*/
 			background-color: green;
 		}
 
 		.item-title {
 			background-color: white;
-			font-size: 15px; /*30px;*/
+			font-size: 30px;
+			/*font-size: 15px;*/
 		}
 
 		.item-blurb {
