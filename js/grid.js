@@ -83,6 +83,7 @@ var GRID = {
 
 		info = GRID.updateInfo(tag);	// Acquire content to display.
 		tiles = GRID.createTile(info);	// Acquire tiles to display.
+		k = -1;	// initializing counter
 
 		// Insert content into table.
 		table = '<table>';
@@ -91,8 +92,8 @@ var GRID = {
 			table += '<tr>'; // start row
 
 			for (var j = 0; j < GRID.colCount; j++) {
-				k = i+j;
-				table += '<td>' + tiles[k] + '</td>'; 
+				k++;
+				table += '<td>' + tiles[k] + '</td>';
 			};
 
 			table += '</tr>'; // end row
