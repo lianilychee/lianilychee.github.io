@@ -3,20 +3,6 @@ $(document).ready(function() {
 
 	/***** SELECTION *****/
 
-	// NAV BAR SELECTION. 
-	// When a section is clicked, hide the other one.
-	$('#portfoliolink').on('click', function() {
-		$('#about').addClass('hide');
-		$('#portfolio').removeClass('hide');
-	})
-
-	$('#aboutlink').on('click', function() {
-		$('#about').removeClass('hide');
-		$('#portfolio').addClass('hide');
-	})
-
-
-	// FOLIO SELECTION
 	$('#filter-all').on('click', function() {
 		GRID.render();
 	});
