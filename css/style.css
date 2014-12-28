@@ -1,5 +1,17 @@
 @charset 'UTF-8';
 
+@font-face {
+	font-family: 'lato', sans-serif;
+	src: 'http://fonts.googleapis.com/css?family=Lato:400,700';
+	/* https://www.google.com/fonts#UsePlace:use/Collection:Lato */
+}
+
+@font-face {
+	font-family: 'droid serif', serif;
+	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css';
+	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
+}
+
 body {
 /*	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
 	background-repeat: repeat, no-repeat;
@@ -35,6 +47,8 @@ nav {
 
 	padding-top: 15px;
 	text-align: center;
+
+	font-family: 'lato';
 }
 
 	nav a {
@@ -74,7 +88,7 @@ nav {
 			width: 400px;
 			/*height: 125px; */
 			/*width: 200px;*/
-			background-color: red;
+			/*background-color: red;*/
 		}
 
 		.item-image {
@@ -87,11 +101,13 @@ nav {
 
 		.item-title {
 			background-color: white;
+			font-family: 'lato';
 			font-size: 30px;
 			/*font-size: 15px;*/
 		}
 
 		.item-blurb {
+			font-family: 'droid serif';
 			background-color: white;
 		}
 
