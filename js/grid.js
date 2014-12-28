@@ -15,8 +15,12 @@ var GRID = {
 			
 			GRID.colCount = Math.floor(GRID.width/400);
 
-			if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
-			else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
+			if (GRID.content.length % GRID.colCount == 0) { 
+				GRID.rowCount = GRID.content.length / GRID.colCount; 
+			}
+			else { 
+				GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; 
+			};
 
 			GRID.render();
 		});
@@ -84,7 +88,7 @@ var GRID = {
 
 		info = GRID.updateInfo(tag);	// Acquire content to display.
 		tiles = GRID.createTile(info);	// Acquire tiles to display.
-		k = -1;	// initializing counter
+		k = -1;	// initializing counter by which tiles is indexed
 
 		// Insert content into table.
 		table = '<table>';
@@ -94,7 +98,13 @@ var GRID = {
 
 			for (var j = 0; j < GRID.colCount; j++) {
 				k++;
-				table += '<td>' + tiles[k] + '</td>';
+
+				if (tiles[k] == null) {
+					table += '<td> </td>';
+				}
+				else {
+					table += '<td>' + tiles[k] + '</td>';
+				};
 			};
 
 			table += '</tr>'; // end row

@@ -2,7 +2,6 @@
 $(document).ready(function() {
 
 	/***** SELECTION *****/
-
 	tag = null;
 
 	$('#filter-all').on('click', function() {
@@ -26,7 +25,7 @@ $(document).ready(function() {
 	});
 
 
-	// Call onLoad behavior of GRID; renders all content upon load.
+	// Call GRID.onLoad() to render all content upon page load.
 	GRID.onLoad('#grid-container');
 
 	$(window).resize( function() {
