@@ -24,7 +24,8 @@ var GRID = {
 
 
 	/* Adjust grid cell dimensions to fit window. */
-	onResize: function() {
+	onResize: function(tag) {
+
 		GRID.width = $(GRID.elementId).width();
 		GRID.height = $(GRID.elementId).height();
 
@@ -33,7 +34,7 @@ var GRID = {
 		if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
 		else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
 
-		GRID.render();
+		GRID.render(tag);
 	},
 
 
