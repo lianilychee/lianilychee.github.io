@@ -34,7 +34,7 @@ var GRID = {
 		if (GRID.content.length % GRID.colCount == 0) { GRID.rowCount = GRID.content.length / GRID.colCount; }
 		else { GRID.rowCount = Math.floor(GRID.content.length/GRID.colCount) + 1; };
 
-		GRID.update();
+		GRID.updateInfo();
 	},
 
 
@@ -58,26 +58,40 @@ var GRID = {
 	},
 
 
-	/* Create an info tile. */
-	createTile: function(k, tag) {
+	/* Format content in HTML to place into each <td>. */
+	createTile: function(info) {
 
-		item = '<div class="item ' + String(GRID.content[k][3]) + '">';
+		tiles = [];
 
-		itemImage = '<div class="item-image"></div>';
-		itemTitle = '<div class="item-title">' + GRID.content[k][1] + '</div>';
-		itemBlurb = '<div class="item-blurb">' + GRID.content[k][2] + '</div>';
+		for (var i = 0; i < info.length; i++) {
 
-		item += itemImage + itemTitle + itemBlurb + '</div>'
+			item = '<div class="item ' + String(info[i][3]) + '">';
 
-		return item;
+			itemImage = '<div class="item-image"></div>';
+			itemTitle = '<div class="item-title">' + info[i][1] + '</div>';
+			itemBlurb = '<div class="item-blurb">' + info[i][2] + '</div>';
+
+			item += itemImage + itemTitle + itemBlurb + '</div>'
+
+			tiles.push( item );
+		}
+
+		return tiles;
 	},
 
 
 	/* Render the grid. */
 	render: function(tag) {
 
-		console.log( GRID.updateInfo(tag) );
+		// Acquire content to display.
+		info = GRID.updateInfo(tag);
+		cells = info.length;
 
+		// Acquire tiles to display.
+		tiles = GRID.createTile(info);
+		// console.log(tiles.length);
+
+		// Insert content into table.
 		table = '<table>';
 
 		for (var i = 0; i < GRID.rowCount; i++) {
@@ -85,8 +99,7 @@ var GRID = {
 
 			for (var j = 0; j < GRID.colCount; j++) {
 				k = i+j;
-				// console.log(k);
-				table += '<td>' + GRID.createTile(k, tag) + '</td>'; 
+				table += '<td>' + tiles[k] + '</td>'; 
 			};
 
 			table += '</tr>'; // end row
