@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 	$('#filter-all').on('click', function() {
 		GRID.render();
+		tag = null;
 	});
 
 	$('#filter-design').on('click', function() {
