@@ -4,47 +4,47 @@ var CONTENT = {
 
 	master: [	
 
-				icf = 	[	'image',
+				icf = 	[	'folio/icf/thumb.jpg',
 							'ICF Prosthetics',
 							'Making below-the-elbow prostheses cheaper and easier to use.',
 							['tag-robo', 'tag-design']	],
 
-				imemio = [	'image',
+				imemio = [	'folio/imemio/thumb.jpg',
 							'imem.io',
 							'Social media analysis and a start-up experience.',
 							['tag-software', 'tag-design']	],
 
-				benji = [	'image',
+				benji = [	'folio/benji/thumb.jpg',
 							'Bio-inspired Beaver',
 							'Bringing Benji to fourth-graders.',
 							['tag-design', 'tag-robo']	],
 
-				beatz = [	'image',
+				beatz = [	'folio/beatz/test.jpg',
 							'Beatz',
 							'OpenCV-based virtual drumset.',
 							['tag-software']	],	
 
-				ors = 	[	'image',
+				ors = 	[	'folio/ors/thumb.jpg',
 							'Olin Robotic Sailing',
 							'A quest to autonomously traverse the Atlantic.',
 							['tag-robo']	],
 
-				edd = 	[	'image',
+				edd = 	[	'folio/edd/thumb.jpg',
 							'Mercury',
 							'A shapeshifting, flying surveillance bot.',
 							['tag-robo']	],
 
-				kiosk = [	'image',
+				kiosk = [	'folio/kiosk/thumb.jpg',
 							'The Food Project Kiosk',
 							'Making important information accessible.',
 							['tag-design']	],
 
-				chinese = [	'image',
+				chinese = [	'folio/chinese/test.jpg',
 							'Mapping the Dialects',
 							'Mapping Mandarin, Cantonese, and Hokkien to written characters.',
 							['tag-software']	],
 
-				bc = 	[	'image',
+				bc = 	[	'folio/birth-control/thumb.jpg',
 							'The Efficacy of Birth Control',
 							'Does The Pill work for everyone?',
 							['tag-software']	]

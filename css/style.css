@@ -118,10 +118,14 @@ nav {
 		.item-image {
 			height: 195px;
 			width: 400px;
-			/*height: 92px;*/
-			/*width: 200px;*/
 			background-color: green;
+			overflow: hidden;
 		}
+
+			.thumbnail{
+				width: 400px;
+				-webkit-filter: grayscale(0);
+			}
 
 		.item-title {
 			background-color: white;
