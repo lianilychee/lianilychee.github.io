@@ -46,7 +46,7 @@ var CONTENT = {
 
 				bc = 	[	'image',
 							'The Efficacy of Birth Control',
-							'Does the pill actually work?',
+							'Does The Pill work for everyone?',
 							['tag-software']	]
 	],
 }
