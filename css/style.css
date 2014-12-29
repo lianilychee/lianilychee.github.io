@@ -10,12 +10,16 @@
 
 @font-face {
 	font-family: 'droid serif', serif;
-	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css';
+	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic';
 	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
 }
 
 h1 {
 	font-family: 'lato';
+}
+
+p {
+	font-family: 'droid serif';
 }
 
 body {
@@ -73,17 +77,30 @@ nav {
 	padding: 10px;
 }
 
-	#about { position: fixed; }
+	#about { 
+		position: fixed; 
+		display: inline-block;
+		height: 426px;
+	}
 
 	#portfolio { }
 
 	/* ABOUT SECTION */
-	#icons-container { }
+	#icon-container {
+		width: 50px;
+		float: left;
+	}
+
+	#selfie {
+		width: 300px;
+		float: left;
+	}
 
 	#blurb {
-		width: 50%;
-		height: 100%;
-		float: left;
+		width: 400px;
+		height: 426px;
+		/*display: inline-block;*/
+		float: right;
 	}
 
 	/* PORTFOLIO SECTIONS */
@@ -131,11 +148,8 @@ nav {
 .img-container {
 	position: relative;
 	overflow: hidden;
-
-	width: 50%;
-	height: 100%;
-	background: red;
-	float: right;
+	/*background: red;*/
+	display: inline-block;
 }
 
 img.clipped {
