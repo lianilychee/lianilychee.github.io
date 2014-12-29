@@ -2,34 +2,51 @@
 
 var CONTENT = {
 
-	master: [	item1 = [	'image',
-							'Unclassified',
-							'blurb',
-							[]	],
+	master: [	
 
-				item2 = [	'image',
-							'Design',
-							'blurb',
-							['tag-design']	],
+				icf = 	[	'image',
+							'ICF Prosthetics',
+							'Making below-the-elbow prostheses cheaper and easier to use.',
+							['tag-robo', 'tag-design']	],
 
-				item3 = [	'image',
-							'Software, Robo',
-							'blurb',
-							['tag-software', 'tag-robo']	],
+				imemio = [	'image',
+							'imem.io',
+							'Social media analysis and a start-up experience.',
+							['tag-software', 'tag-design']	],
 
-				item4 = [	'image',
-							'Design, Robo',
-							'blurb',
-							['tag-design', 'tag-robo']	],	
+				benji = [	'image',
+							'Bio-inspired Beaver',
+							'Bringing Benji to fourth-graders.',
+							['tag-design', 'tag-robo']	],
 
-				item5 = [	'image',
-							'Robo',
-							'blurb',
+				beatz = [	'image',
+							'Beatz',
+							'OpenCV-based virtual drumset.',
+							['tag-software']	],	
+
+				ors = 	[	'image',
+							'Olin Robotic Sailing',
+							'A quest to autonomously traverse the Atlantic.',
 							['tag-robo']	],
 
-				item6 = [	'image',
-							'Unclassified',
-							'blurb',
-							[]	]
+				edd = 	[	'image',
+							'Mercury',
+							'A shapeshifting, flying surveillance bot.',
+							['tag-robo']	],
+
+				kiosk = [	'image',
+							'The Food Project Kiosk',
+							'Making important information accessible.',
+							['tag-design']	],
+
+				chinese = [	'image',
+							'Mapping the Dialects',
+							'Mapping Mandarin, Cantonese, and Hokkien to written characters.',
+							['tag-software']	],
+
+				bc = 	[	'image',
+							'The Efficacy of Birth Control',
+							'Does the pill actually work?',
+							['tag-software']	]
 	],
 }
