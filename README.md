@@ -1,4 +1,9 @@
-GIVING CREDIT WHERE CREDIT'S DUE
+## lianilychee.github.io
+
+My handcrafted personal website and second foray into the world of web dev.
+
+
+## Giving credit where it's due
 
 Email icon:
 "Internet and web" by Popcic (https://www.iconfinder.com/popcic)
