@@ -39,7 +39,8 @@ a:hover {
 
 td {
 	/*border: 1px solid black;*/
-	width: 425px;
+	width: 450px;
+	height: 300;
 }
 
 
@@ -118,13 +119,12 @@ nav {
 		.item-image {
 			height: 195px;
 			width: 400px;
-			background-color: green;
+			/*background-color: green;*/
 			overflow: hidden;
 		}
 
 			.thumbnail{
 				width: 400px;
-				-webkit-filter: grayscale(0);
 			}
 
 		.item-title {

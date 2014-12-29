@@ -5,47 +5,47 @@ var CONTENT = {
 	master: [	
 
 				icf = 	[	'folio/icf/thumb.gif',
-							'ICF Prosthetics',
+							'ICF PROSTHETICS',
 							'Making below-the-elbow prostheses cheaper and easier to use.',
 							['tag-robo', 'tag-design']	],
 
 				imemio = [	'folio/imemio/thumb.gif',
-							'imem.io',
+							'IMEM.IO',
 							'Social media analysis and a start-up experience.',
 							['tag-software', 'tag-design']	],
 
 				benji = [	'folio/benji/thumb.gif',
-							'Bio-inspired Beaver',
+							'BIO-INSPIRED BEAVER',
 							'Bringing Benji to fourth-graders.',
 							['tag-design', 'tag-robo']	],
 
 				beatz = [	'folio/beatz/test.gif',
-							'Beatz',
+							'BEATZ',
 							'OpenCV-based virtual drumset.',
 							['tag-software']	],	
 
 				ors = 	[	'folio/ors/thumb.gif',
-							'Olin Robotic Sailing',
+							'OLIN ROBOTIC SAILING',
 							'A quest to autonomously traverse the Atlantic.',
 							['tag-robo']	],
 
 				edd = 	[	'folio/edd/thumb.gif',
-							'Mercury',
+							'MERCURY',
 							'A shapeshifting, flying surveillance bot.',
 							['tag-robo']	],
 
 				kiosk = [	'folio/kiosk/thumb.gif',
-							'The Food Project Kiosk',
-							'Making important information accessible.',
+							'INFORMATIONAL KIOSK',
+							'Bringing The Food Project to the community.',
 							['tag-design']	],
 
 				chinese = [	'folio/chinese/test.gif',
-							'Mapping the Dialects',
+							'LOST IN TRANSLATION',
 							'Mapping Mandarin, Cantonese, and Hokkien to written characters.',
 							['tag-software']	],
 
 				bc = 	[	'folio/birth-control/thumb-compressed.gif',
-							'The Efficacy of Birth Control',
+							'BIRTH CONTROL EFFICACY',
 							'Does The Pill work for everyone?',
 							['tag-software']	]
 	],
