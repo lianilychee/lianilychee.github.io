@@ -33,4 +33,9 @@ $(document).ready(function() {
 	})
 
 
+	/***** POP-UPS *****/
+	$('.item-image').on('click', function() {
+		console.log('butts');
+	})
+
 })

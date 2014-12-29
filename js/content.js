@@ -9,7 +9,7 @@ var CONTENT = {
 							'Making below-the-elbow prostheses cheaper and easier to use.',
 							['tag-robo', 'tag-design']	],
 
-				imemio = [	'folio/imemio/thumb.gif',
+			/*	imemio = [	'folio/imemio/thumb.gif',
 							'IMEM.IO',
 							'Social media analysis and a start-up experience.',
 							['tag-software', 'tag-design']	],
@@ -48,5 +48,7 @@ var CONTENT = {
 							'BIRTH CONTROL EFFICACY',
 							'Does The Pill work for everyone?',
 							['tag-software']	]
+
+							*/
 	],
 }
