@@ -14,3 +14,5 @@ GitHub icon:
 "Entypo" by Daniel Bruce (http://danielbruce.se/)
 License: Creative Commons Attribution-Share Alike 3.0 Unported
 URL: https://www.iconfinder.com/icons/216636/github_icon#size=32
+
+Profile picture artfully snapped by Eleanor Funkhouser
