@@ -3,23 +3,23 @@
 @charset 'UTF-8';
 
 @font-face {
-	font-family: 'lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	src: 'http://fonts.googleapis.com/css?family=Lato:400,700';
 	/* https://www.google.com/fonts#UsePlace:use/Collection:Lato */
 }
 
 @font-face {
-	font-family: 'droid serif', serif;
+	font-family: 'Droid Serif', serif;
 	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic';
 	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
 }
 
 h1 {
-	font-family: 'lato';
+	font-family: 'Lato';
 }
 
 p {
-	font-family: 'droid serif';
+	font-family: 'Droid Serif';
 }
 
 body {
@@ -46,6 +46,9 @@ td {
 
 /***** NAV BAR *****/
 nav {
+	text-align: center;
+	font-family: 'Lato';
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -56,9 +59,6 @@ nav {
 	/*background: white;*/
 	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
 	background-size: auto, 100% 100%;*/
-
-	text-align: center;
-	font-family: 'lato';
 }
 
 	nav a {
@@ -129,13 +129,14 @@ nav {
 
 		.item-title {
 			background-color: white;
-			font-family: 'lato';
+			font-family: 'Lato';
 			font-size: 30px;
 			/*font-size: 15px;*/
 		}
 
 		.item-blurb {
-			font-family: 'droid serif';
+			/*font-family: 'Shadows Into Light Two';*/
+			font-family: 'Droid Serif';
 			background-color: white;
 		}
 
