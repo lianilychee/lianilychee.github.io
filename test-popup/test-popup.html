@@ -1,41 +1,50 @@
 <!doctype html>
 <head>
     <meta charset="utf-8">
-    <title>jQuery Popup Overlay test</title>
-
-    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />
+    <title>stripped down</title>
+    <link rel="stylesheet" href="style-test.css">
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="jquery.popupoverlay.js"></script>
-
-    <!-- Custom styles for the demo page -->
-    <style>
-        .container { padding-left: 0; padding-right: 0; }
-    </style>
 </head>
 
 <body>
 
+<!-- WORKING -->
+
     <div class="container">
-        <a class="fade_open btn btn-success" href="#fade">FADE</a>
+        <a class="fade_open" href="#fade">. FADE .</a>
     </div>
 
-
-    <!-- Set defaults -->
-    <script>
-    $(document).ready(function () {
-        $.fn.popup.defaults.pagecontainer = '.container'
-    });
-    </script>
-
-
-    <!-- Fade -->
-    <div id="fade" class="well"> HELLO BUTTFACE </div>
+    <div id="fade" class="popup"> 
+        HELLO POPUP
+    </div>
 
     <script>
     $(document).ready(function () {
         $('#fade').popup({
-          transition: 'all 0.3s',
-          scrolllock: true
+        // $('.popup').popup({  // querying by class also works
+            transition: 'all 0.3s',
+            scrolllock: true,
+        });
+    });
+    </script>
+
+
+<!-- EXPERIMENTAL -->
+
+    <div class="container">
+        <a class="fade_open" href="#fade">. FADE .</a>
+    </div>
+
+    <div id="fade" class="popup"> 
+        HELLO POPUP
+    </div>
+
+    <script>
+    $(document).ready(function () {
+        $('#fade').popup({
+            transition: 'all 0.3s',
+            scrolllock: true,
         });
     });
     </script>
