@@ -24,6 +24,8 @@ p {
 
 body {
 	background-color: white;
+	/*background-image: url('../images/congruent_outline_light.jpg');*/
+	/* Background pattern: "Congruent Pentagon Outline" from subtlepatterns.com */
 }
 
 a, a:visited {
