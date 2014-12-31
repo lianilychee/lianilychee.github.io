@@ -32,7 +32,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: #8F382C;
+	color: #2C85C9;
 }
 
 /*.hide {
@@ -84,6 +84,7 @@ nav {
 	}
 
 		#nav-menu a, a:visited{ color: white; }
+		#nav-menu a:hover{ color: #61BBFF; }
 
 
 /***** SECTIONS *****/
@@ -102,7 +103,8 @@ nav {
 	}
 
 	#portfolio a {
-		padding-right: 10px;
+		padding-left: 10px;
+		font-weight: bold;
 	}
 
 	/* ABOUT SECTION */
@@ -150,11 +152,14 @@ nav {
 			background-color: white;
 			font-family: 'Lato';
 			font-size: 30px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 			/*font-size: 15px;*/
 		}
 
 		.item-blurb {
 			/*font-family: 'Shadows Into Light Two';*/
+			/*font-family: 'Droid Serif';*/
 			font-family: 'Droid Serif';
 			background-color: white;
 		}
