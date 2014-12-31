@@ -50,23 +50,25 @@ td {
 
 /***** NAV BAR *****/
 nav {
-	width: 1000px;
+	width: 100%;
 	height: 95px; /* Tweak this number to adjust nav bar height.  Make sure that .section-container margin-top value is adjusted accordingly. */
 	position: fixed;
+	top: 0px;
+	left: 0px; /*This bit is super hacky...*/
 
 	color: black;
 	text-align: center;
 	font-family: 'Lato';
-	/*margin: 0 auto;*/
-
-	top: 0px;
-	left: auto;
-	right: auto;
-	/*left: 0;*/
-	/*width: 100%;*/
-	
-	background: white;
 }
+
+	#nav-wrapper {
+		width: 1000px;
+		background: white;
+		margin-left: auto;
+		margin-right: auto;
+/*		margin-left: calc(auto-0px);
+		margin-right: calc(auto+0px);*/
+	}
 
 	nav a {
 		font-size: 25px;
@@ -96,8 +98,10 @@ nav {
 .section-container {
 	/*height: 100%;*/
 	float: center;
-	width: 980px;
+	width: 980px;  /* This value must be 20px less than the nav width to compensate for padding */
 	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 100px;
 	padding: 10px;
 	background: white;
