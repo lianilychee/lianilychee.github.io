@@ -101,7 +101,9 @@ nav {
 		height: 426px;
 	}
 
-	#portfolio { }
+	#portfolio a {
+		padding-right: 10px;
+	}
 
 	/* ABOUT SECTION */
 	#icon-container {
