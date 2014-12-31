@@ -11,7 +11,7 @@ var CONTENT = {
 
 				imemio = [	'folio/imemio/thumb.gif',
 							'IMEM.IO',
-							'Social media analysis and a start-up experience.',
+							'Deep Twitter analysis and a start-up experience.',
 							['tag-software', 'tag-design']	],
 
 				benji = [	'folio/benji/thumb.gif',
@@ -24,14 +24,14 @@ var CONTENT = {
 							'OpenCV-based virtual drumset.',
 							['tag-software']	],	
 
-				ors = 	[	'folio/ors/thumb.gif',
-							'OLIN ROBOTIC SAILING',
-							'A quest to autonomously traverse the Atlantic.',
-							['tag-robo']	],
-
 				edd = 	[	'folio/edd/thumb.gif',
 							'MERCURY',
 							'A shapeshifting, flying surveillance bot.',
+							['tag-robo']	],
+
+				ors = 	[	'folio/ors/thumb.gif',
+							'OLIN ROBOTIC SAILING',
+							'A quest to autonomously traverse the Atlantic.',
 							['tag-robo']	],
 
 				kiosk = [	'folio/kiosk/thumb.gif',
