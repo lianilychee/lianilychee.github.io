@@ -9,7 +9,7 @@ var CONTENT = {
 							'Making below-the-elbow prostheses cheaper and easier to use.',
 							['tag-robo', 'tag-design']	],
 
-			/*	imemio = [	'folio/imemio/thumb.gif',
+				imemio = [	'folio/imemio/thumb.gif',
 							'IMEM.IO',
 							'Social media analysis and a start-up experience.',
 							['tag-software', 'tag-design']	],
@@ -37,7 +37,7 @@ var CONTENT = {
 				kiosk = [	'folio/kiosk/thumb.gif',
 							'INFORMATIONAL KIOSK',
 							'Bringing The Food Project to the community.',
-							['tag-design']	],
+							['tag-design']	], 
 
 				chinese = [	'folio/chinese/test.gif',
 							'LOST IN TRANSLATION',
@@ -49,6 +49,6 @@ var CONTENT = {
 							'Does The Pill work for everyone?',
 							['tag-software']	]
 
-							*/
+							
 	],
 }
