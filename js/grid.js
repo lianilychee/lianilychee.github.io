@@ -51,7 +51,6 @@ var GRID = {
 			return GRID.content;
 		}
 		else {
-			// console.log('return some other info');
 			for (var i = 0; i < GRID.content.length; i++) {
 				if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
 					GRID.filtered.push( GRID.content[i] );
@@ -68,14 +67,16 @@ var GRID = {
 		tiles = [];
 
 		for (var i = 0; i < info.length; i++) {
-			item = '<a href="javaScript:void(0);" <div class="item ' + String(info[i][3]) + '">';
+			item = '<a href="folio/' + info[i][0] + '.html"';
 
-			itemImage = '<div class="item-image"> <img class="thumbnail" src="' + info[i][0] + '"></div>';
-			// itemImage = '<div class="item-image"> <img class="thumbnail" src="folio/icf/cover.jpg"></div>';
-			itemTitle = '<div class="item-title">' + info[i][1] + '</div>';
-			itemBlurb = '<div class="item-blurb">' + info[i][2] + '</div>';
+			itemClass = '<div class="item ' + String(info[i][4]) + '">';
 
-			item += itemImage + itemTitle + itemBlurb + '</div> </a>';
+			itemImage = '<div class="item-image"> <img class="thumbnail" src="' + info[i][1] + '"></div>';
+		
+			itemTitle = '<div class="item-title">' + info[i][2] + '</div>';
+			itemBlurb = '<div class="item-blurb">' + info[i][3] + '</div>';
+
+			item += itemClass + itemImage + itemTitle + itemBlurb + '</div> </a>';
 
 			tiles.push( item );
 		}

@@ -4,56 +4,64 @@ var CONTENT = {
 
 	master: [	
 
-		icf = 	[	'folio/icf/thumb.gif',
+		icf = 	[	'icf',
+					'folio/icf/thumb.gif',
 					'ICF PROSTHETICS',
 					'Making below-the-elbow prostheses cheaper and easier to use.',
 					['tag-robo', 'tag-design']	],
 
-		imemio = [	'folio/imemio/thumb.gif',
+		imemio = [	'imemio',
+					'folio/imemio/thumb.gif',
 					'IMEM.IO',
 					'Deep Twitter analysis and a start-up experience.',
 					['tag-software', 'tag-design']	],
 
-		benji = [	'folio/benji/thumb.gif',
+		benji = [	'benji',
+					'folio/benji/thumb.gif',
 					'BIO-INSPIRED BEAVER',
 					'Bringing Benji to fourth-graders.',
 					['tag-design', 'tag-robo']	],
 
-		beatz = [	'folio/beatz/test.gif',
+		beatz = [	'beatz',
+					'folio/beatz/test.gif',
 					'BEATZ',
 					'OpenCV-based virtual drumset.',
 					['tag-software']	],	
 
-		edd = 	[	'folio/edd/thumb.gif',
+		edd = 	[	'edd',
+					'folio/edd/thumb.gif',
 					'MERCURY',
 					'A shapeshifting, flying surveillance bot.',
 					['tag-robo']	],
 
-		ors = 	[	'folio/ors/thumb.gif',
+		ors = 	[	'ors',
+					'folio/ors/thumb.gif',
 					'OLIN ROBOTIC SAILING',
 					'A quest to autonomously traverse the Atlantic.',
 					['tag-robo']	],
 
-		kiosk = [	'folio/kiosk/thumb.gif',
+		kiosk = [	'kiosk',
+					'folio/kiosk/thumb.gif',
 					'INFORMATIONAL KIOSK',
 					'Bringing The Food Project to the Dorchester/Roxbury <br> communities.',
 					['tag-design']	], 
 
-		chinese = [	'folio/chinese/test.gif',
+		chinese = [	'chinese',
+					'folio/chinese/test.gif',
 					'LOST IN TRANSLATION',
 					'Mapping Mandarin, Cantonese, and Fukien to written Chinese characters.',
 					['tag-software']	],
 
-		bc = 	[	'folio/birth-control/thumb-compressed.gif',
+		bc = 	[	'bc',
+					'folio/birth-control/thumb-compressed.gif',
 					'BIRTH CONTROL EFFICACY',
 					"Analysis of BMI on The Pill's efficacy.",
 					['tag-software']	],
-
-		lianilychee = [	'folio/lianilychee/thumb.gif',
+		
+		lianilychee = [	'lianilychee',
+					'folio/lianilychee/thumb.gif',
 					'THIS WEBSITE',
 					'My first solo foray into the wide world of web-dev.',
-					['tag-software']]
-
-							
+					['tag-software']],
 	],
 }
