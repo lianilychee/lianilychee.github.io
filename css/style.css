@@ -23,14 +23,16 @@ p {
 }
 
 body {
-/*	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
-	background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;*/
 	background-color: white;
 }
 
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
 a:hover {
-	color: red;
+	color: #8F382C;
 }
 
 /*.hide {
@@ -46,6 +48,7 @@ td {
 
 /***** NAV BAR *****/
 nav {
+	color: black;
 	text-align: center;
 	font-family: 'Lato';
 
@@ -55,17 +58,23 @@ nav {
 	padding-top: 15px;
 
 	width: 100%;
-	height: 55px;
+
+	/* Tweak this number to adjust nav bar height.  Make sure that .section-container margin-top value is adjusted accordingly. */
+	height: 105px; 
+
 	/*background: white;*/
 	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
 	background-size: auto, 100% 100%;*/
 }
 
+	#nav-title {
+		font-size: 45px;
+	}
+
 	nav a {
-		font-size: 20px;
+		font-size: 25px;
 		padding-left: 15px;
 		padding-right: 15px;
-		text-decoration: none;
 	}
 
 
