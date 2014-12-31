@@ -55,34 +55,42 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding-top: 15px;
+	/*padding-top: 5px;*/
 
 	width: 100%;
-
-	/* Tweak this number to adjust nav bar height.  Make sure that .section-container margin-top value is adjusted accordingly. */
-	height: 105px; 
-
-	/*background: white;*/
-	background-image: url('../images/overlay.png'), url('../images/bg.jpg');
-	background-size: auto, 100% 100%;*/
+	/*height: 95px;*/ /* Tweak this number to adjust nav bar height.  Make sure that .section-container margin-top value is adjusted accordingly. */
+	
+	background: white;
 }
-
-	#nav-title {
-		font-size: 45px;
-	}
 
 	nav a {
 		font-size: 25px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
+
+	#nav-title {
+		color: black;
+		/*background-color: red;*/
+		font-size: 45px;
+		margin-top: 30px;
+	}
+
+	#nav-menu {
+		color: white;
+		padding: 5px;
+		background-color: #4F4F4F;
+		color: white;
+	}
+
+		#nav-menu a, a:visited{ color: white; }
 
 
 /***** SECTIONS *****/
 .section-container {
 	height: 100%;
 	width: 96%;
-	margin-top: 70px;
+	margin-top: 90px;
 	padding-top: 100px;
 	padding: 10px;
 }
