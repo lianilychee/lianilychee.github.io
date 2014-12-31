@@ -36,7 +36,7 @@ var CONTENT = {
 
 				kiosk = [	'folio/kiosk/thumb.gif',
 							'INFORMATIONAL KIOSK',
-							'Bringing The Food Project to the community.',
+							'Bringing The Food Project to the Dorchester/Roxbury communities.',
 							['tag-design']	], 
 
 				chinese = [	'folio/chinese/test.gif',

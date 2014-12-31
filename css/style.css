@@ -98,12 +98,13 @@ nav {
 .section-container {
 	/*height: 100%;*/
 	float: center;
-	width: 980px;  /* This value must be 20px less than the nav width to compensate for padding */
+	width: 950px;  /* This value must be 20px less than the nav width to compensate for padding */
 	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 100px;
 	padding: 10px;
+	padding-left: 40px;
 	background: white;
 }
 
@@ -180,6 +181,7 @@ nav {
 			/*font-family: 'Droid Serif';*/
 			font-family: 'Droid Serif';
 			background-color: white;
+			font-style: italic;
 		}
 
 
