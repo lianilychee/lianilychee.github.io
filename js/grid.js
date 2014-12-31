@@ -52,7 +52,7 @@ var GRID = {
 		}
 		else {
 			for (var i = 0; i < GRID.content.length; i++) {
-				if ( CONTENT.master[i][3].indexOf(tag) !== -1 ) {
+				if ( CONTENT.master[i][4].indexOf(tag) !== -1 ) {
 					GRID.filtered.push( GRID.content[i] );
 				}
 			};
@@ -67,7 +67,7 @@ var GRID = {
 		tiles = [];
 
 		for (var i = 0; i < info.length; i++) {
-			item = '<a href="folio/' + info[i][0] + '.html"';
+			item = '<a href="folio/' + info[i][0] + '/' + info[i][0] + '.html"';
 
 			itemClass = '<div class="item ' + String(info[i][4]) + '">';
 

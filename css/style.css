@@ -1,4 +1,4 @@
-/***** OVERARCHING STYLES *****/
+/********** OVERARCHING STYLES **********/
 
 @charset 'UTF-8';
 
@@ -14,13 +14,9 @@
 	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
 }
 
-h1 {
-	font-family: 'Lato';
-}
+h1 {font-family: 'Lato'; }
 
-p {
-	font-family: 'Droid Serif';
-}
+p { font-family: 'Droid Serif'; }
 
 body {
 	background-color: white;
@@ -28,18 +24,9 @@ body {
 	/* Background pattern: "Congruent Pentagon Outline" from subtlepatterns.com */
 }
 
-a, a:visited {
-	text-decoration: none;
-	color: black;
-}
+a, a:visited { text-decoration: none; color: black; }
 
-a:hover {
-	color: #2C85C9;
-}
-
-/*.hide {
-	display: none;
-}*/
+a:hover { color: #2C85C9; }
 
 td {
 	/*border: 1px solid black;*/
@@ -49,7 +36,7 @@ td {
 }
 
 
-/***** NAV BAR *****/
+/********** NAV BAR **********/
 nav {
 	width: 100%;
 	height: 95px; /* Tweak this number to adjust nav bar height.  Make sure that .section-container margin-top value is adjusted accordingly. */
@@ -91,11 +78,11 @@ nav {
 		color: white;
 	}
 
-		#nav-menu a, a:visited{ color: white; }
+		#nav-menu a, #nav-menu a:visited{ color: white; }
 		#nav-menu a:hover{ color: #61BBFF; }
 
 
-/***** SECTIONS *****/
+/********** SECTIONS **********/
 .section-container {
 	float: center;
 	width: 920px;  /* This value must be some number of pixels less than the nav width to compensate for padding */
@@ -119,99 +106,85 @@ nav {
 	}
 
 	#portfolio a {
-		padding-left: 10px;
 		/*font-weight: bold;*/
 		background: white;
 	}
 
-		#filter-options {
-			font-weight: bold;
-		}
-
-	/* ABOUT SECTION */
-	#icon-container {
-		width: 50px;
-		height: 426px;
-		float: left;
-		/*background: blue;*/
-	}
-
-	#selfie {
-		width: 300px;
-		height: 426px;
-		float: left;
-		/*background: red;*/
-	}
-
-	#blurb {
-		width: 400px;
-		height: 426px;
-		/*display: inline-block;*/
-		float: right;
-		background: green;
-	}
-
-	/* PORTFOLIO SECTIONS */
-	.grid-container {}
-
-		.item{
-			margin-bottom: 20px;
-			height: 250px;
-			width: 400px;
-			/*height: 125px; */
-			/*width: 200px;*/
-			/*background-color: red;*/
-		}
-
-		.item-image {
-			height: 195px;
-			width: 400px;
-			/*background-color: green;*/
-			overflow: hidden;
-		}
-
-			.thumbnail{
-				width: 400px;
-			}
-
-		.item-title {
-			background-color: white;
-			font-family: 'Lato';
-			font-size: 30px;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			/*font-size: 15px;*/
-		}
-
-		.item-blurb {
-			/*font-family: 'Shadows Into Light Two';*/
-			/*font-family: 'Droid Serif';*/
-			font-family: 'Droid Serif';
-			background-color: white;
-			font-style: italic;
-			/*font-weight: none;*/
-		}
+		#filter-options { font-weight: bold; }
 
 
+/***** ABOUT SECTION *****/
+#icon-container {
+	width: 50px;
+	height: 426px;
+	float: left;
+	/*background: blue;*/
+}
 
-
-
-
-
-/* !!!!!!!!!!!!! SHELVE FOR LATER !!!!!!!!!!!!!! */
-
-
-/***** IMAGE RESIZING *****/
-.img-container {
-	position: relative;
-	overflow: hidden;
+#selfie {
+	width: 300px;
+	height: 426px;
+	float: left;
 	/*background: red;*/
-	display: inline-block;
 }
 
-img.clipped {
-	/*display: block;*/
-	position: absolute;
-/*	height: 100%;
-	width: 100%;*/
+#blurb {
+	width: 400px;
+	height: 426px;
+	float: right;
+	background: green;
 }
+
+
+/***** PORTFOLIO SECTIONS *****/
+.grid-container {}
+
+.item{
+	margin-bottom: 20px;
+	height: 250px;
+	width: 400px;
+	/*height: 125px; */
+	/*width: 200px;*/
+	/*background-color: red;*/
+}
+
+.item-image {
+	height: 195px;
+	width: 400px;
+	overflow: hidden;
+}
+
+	.thumbnail{ width: 400px; }
+
+.item-title {
+	background-color: white;
+	font-family: 'Lato';
+	font-size: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.item-blurb {
+	font-family: 'Droid Serif';
+	background-color: white;
+	font-style: italic;
+	/*font-weight: none;*/
+}
+
+
+/***** CONTENT SECTIONS*****/
+.content { /*Other dependency is .section-container ;*/
+	padding: 50px;
+	padding-top: 25px;
+	width: 900px;
+}
+
+.content a { color: #9234C9; }
+
+.content a:hover { color: #2C85C9; }  /* Figure out why this reduncancy is needed */
+
+.content p { }
+
+.key-points {  }
+
+.content-header { font-weight: bold; }

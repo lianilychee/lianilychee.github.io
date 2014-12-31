@@ -31,7 +31,7 @@ var CONTENT = {
 		edd = 	[	'edd',
 					'folio/edd/thumb.gif',
 					'MERCURY',
-					'A shapeshifting, flying surveillance bot.',
+					'A shapeshifting, flying reconnaisance bot.',
 					['tag-robo']	],
 
 		ors = 	[	'ors',
