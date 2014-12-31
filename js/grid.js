@@ -68,14 +68,14 @@ var GRID = {
 		tiles = [];
 
 		for (var i = 0; i < info.length; i++) {
-			item = '<div class="item ' + String(info[i][3]) + '">';
+			item = '<a href="javaScript:void(0);" <div class="item ' + String(info[i][3]) + '">';
 
 			itemImage = '<div class="item-image"> <img class="thumbnail" src="' + info[i][0] + '"></div>';
 			// itemImage = '<div class="item-image"> <img class="thumbnail" src="folio/icf/cover.jpg"></div>';
 			itemTitle = '<div class="item-title">' + info[i][1] + '</div>';
 			itemBlurb = '<div class="item-blurb">' + info[i][2] + '</div>';
 
-			item += itemImage + itemTitle + itemBlurb + '</div>';
+			item += itemImage + itemTitle + itemBlurb + '</div> </a>';
 
 			tiles.push( item );
 		}

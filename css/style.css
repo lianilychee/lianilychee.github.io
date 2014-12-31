@@ -43,8 +43,9 @@ a:hover {
 
 td {
 	/*border: 1px solid black;*/
+	/* The following two values includes padding */
 	width: 450px;
-	height: 300;
+	height: 300px;
 }
 
 
@@ -97,13 +98,13 @@ nav {
 /***** SECTIONS *****/
 .section-container {
 	float: center;
-	width: 950px;  /* This value must be 20px less than the nav width to compensate for padding */
+	width: 920px;  /* This value must be some number of pixels less than the nav width to compensate for padding */
 	margin-top: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 100px;
 	padding: 10px;
-	padding-left: 40px;
+	padding-left: 70px;
 	background: white;
 }
 
@@ -119,9 +120,13 @@ nav {
 
 	#portfolio a {
 		padding-left: 10px;
-		font-weight: bold;
+		/*font-weight: bold;*/
 		background: white;
 	}
+
+		#filter-options {
+			font-weight: bold;
+		}
 
 	/* ABOUT SECTION */
 	#icon-container {
@@ -184,6 +189,7 @@ nav {
 			font-family: 'Droid Serif';
 			background-color: white;
 			font-style: italic;
+			/*font-weight: none;*/
 		}
 
 
