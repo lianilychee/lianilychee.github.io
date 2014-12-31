@@ -47,7 +47,12 @@ var CONTENT = {
 				bc = 	[	'folio/birth-control/thumb-compressed.gif',
 							'BIRTH CONTROL EFFICACY',
 							'Does The Pill work for everyone?',
-							['tag-software']	]
+							['tag-software']	],
+
+				lianilychee = [	'folio/lianilychee/thumb.gif',
+							'THIS WEBSITE',
+							'My first solo foray into web-dev land.',
+							['tag-software']]
 
 							
 	],
