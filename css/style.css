@@ -14,8 +14,6 @@
 	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
 }
 
-h1 {font-family: 'Lato'; }
-
 p { font-family: 'Droid Serif'; }
 
 body {
@@ -114,26 +112,43 @@ nav {
 
 
 /***** ABOUT SECTION *****/
-#icon-container {
-	width: 50px;
-	height: 426px;
-	float: left;
-	/*background: blue;*/
-}
-
-#selfie {
-	width: 300px;
-	height: 426px;
-	float: left;
-	/*background: red;*/
+#about-content {
+	/*background: purple;*/
+	width: 900px;
+	height: 500px;
 }
 
 #blurb {
-	width: 400px;
-	height: 426px;
-	float: right;
-	background: green;
+	/*width: 450px;*/
+	height: 300px;
+	float: left;
+	text-align: right;
+	padding: 50px;
+	padding-left: 90px;
+	font-size: 30px;
 }
+
+	#salutation {
+		font-size: 60px;
+		font-family: 'Lato';
+	}
+
+#media {
+	/*background-color: gray;*/
+	float: left;
+}
+
+	#selfie {
+		height: 225px;
+		float: left;
+		padding-top: 55px;
+	}
+
+	#icon-container {
+		width: 100px;
+		height: 40px;
+		/*background: blue;*/
+	}
 
 
 /***** PORTFOLIO SECTIONS *****/
@@ -143,9 +158,6 @@ nav {
 	margin-bottom: 20px;
 	height: 250px;
 	width: 400px;
-	/*height: 125px; */
-	/*width: 200px;*/
-	/*background-color: red;*/
 }
 
 .item-image {
