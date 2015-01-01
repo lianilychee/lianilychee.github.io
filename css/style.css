@@ -170,21 +170,3 @@ nav {
 	font-style: italic;
 	/*font-weight: none;*/
 }
-
-
-/***** CONTENT SECTIONS*****/
-.content { /*Other dependency is .section-container ;*/
-	padding: 50px;
-	padding-top: 25px;
-	width: 900px;
-}
-
-.content a { color: #9234C9; }
-
-.content a:hover { color: #2C85C9; }  /* Figure out why this reduncancy is needed */
-
-.content p { }
-
-.key-points {  }
-
-.content-header { font-weight: bold; }
