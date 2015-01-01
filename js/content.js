@@ -53,7 +53,7 @@ var CONTENT = {
 					['tag-software']	],
 
 		bc = 	[	'bc',
-					'folio/birth-control/thumb-compressed.gif',
+					'folio/bc/thumb-compressed.gif',
 					'BIRTH CONTROL EFFICACY',
 					"Analysis of BMI on The Pill's efficacy.",
 					['tag-software']	],
