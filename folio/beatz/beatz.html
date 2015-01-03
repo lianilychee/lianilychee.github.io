@@ -28,17 +28,21 @@
 
 		<h1><a href='https://github.com/lianilychee/beatz' target='_blank'>beatz</a></h1>
 
-		<p>For the final project in Software Design, an Python-based introduction to programming, two peers and I used OpenCV to create a virtual drumset.</p>
+		<p>For the final project in Software Design, a Python-based introduction to programming, two peers and I used OpenCV to create a virtual drumset, pictured below.  To play a drum sound, the user touches its respective box.  By rhythmically tapping on one or multiple boxes, one can create a beat.</p><br>
 
-		<p>I was responsible for the OpenCV implementation.  My unsuccessful escapades with color thresholding/fiducial tracking, contour detection, and hand detection are detailed <a href='https://github.com/lianilychee/beatz/wiki/2.2.-Motion-Detection-and-Image-Processing' target='_blank'>here</a>.  This was a lesson for me that the simplest, oft overlooked solution is the best.	</p>
+		<img src='screenshot.png' style='display: block; margin-left: auto; margin-right: auto;'><br>
+
+		<p>I was the OpenCV wrangler, which meant I was responsible for processing the streaming video - tracking the user's hand - in order to trigger each drum's audio.  To do so, I ended up implementing three different methods before arriving at a simple, elegant solution.  To read more about my adventures with color thresholding, contour recognition, and fingertip detection, <a href='https://github.com/lianilychee/beatz/wiki/2.2.-Motion-Detection-and-Image-Processing'>click here.</a>  I ended up detecting pixel change within each drum's box.  If enough pixels changed in the comparison between frame and base case image (captured when the program initializes), the audio is triggered.</p>
+
+		<p>It took multiple weeks to arrive at this solution.  Part of the time was learning the ins and outs of programming and Python (again, this was an introductory software course), but most of the time was spent attempting to fine-tune each hand-tracking method to our needs to no avail.  It turns out that pixel change detection, which has nothing to do with hand tracking itself, was the best solution.</p>
+
+		<p>I had two important takeaways: a) Abstraction! b) More simple = more better.	</p>
 		
 
 		<div class='key-points'>
 			<div class='content-header'>Links</div>
 
-			<p><a href='https://github.com/lianilychee/beatz/' target='_blank'>Github repo.</p>
-
-			<p><a href='https://github.com/lianilychee/beatz/wiki/2.2.-Motion-Detection-and-Image-Processing' target='_blank'>Image processing process (hah) documentation.</a></p>
+			<p><a href='https://github.com/lianilychee/beatz/' target='_blank'>Github repo</p>
 
 			<p><a href='https://github.com/lianilychee/beatz/wiki' target='_blank'>Project Documentation</a></p>
 		</div>
