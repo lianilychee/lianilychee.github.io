@@ -16,6 +16,18 @@ var CONTENT = {
 					'Deep Twitter analysis and a start-up experience.',
 					['tag-software', 'tag-design']	],
 
+		edd = 	[	'edd',
+					'folio/edd/thumb.gif',
+					'MERCURY',
+					'A shapeshifting, flying reconnaisance bot.',
+					['tag-robo']	],
+
+		lianilychee = [	'lianilychee',
+					'folio/lianilychee/thumb.gif',
+					'THIS WEBSITE',
+					'My first solo foray into the wide world of web dev.',
+					['tag-software']	],
+
 		benji = [	'benji',
 					'folio/benji/thumb.gif',
 					'BIO-INSPIRED BEAVER',
@@ -27,12 +39,6 @@ var CONTENT = {
 					'BEATZ',
 					'OpenCV-based virtual drumset.',
 					['tag-software']	],	
-
-		edd = 	[	'edd',
-					'folio/edd/thumb.gif',
-					'MERCURY',
-					'A shapeshifting, flying reconnaisance bot.',
-					['tag-robo']	],
 
 		ors = 	[	'ors',
 					'folio/ors/thumb.gif',
@@ -58,10 +64,5 @@ var CONTENT = {
 					"Analysis of BMI on The Pill's efficacy.",
 					['tag-software']	],
 		
-		lianilychee = [	'lianilychee',
-					'folio/lianilychee/thumb.gif',
-					'THIS WEBSITE',
-					'My first solo foray into the wide world of web-dev.',
-					['tag-software']],
 	],
 }
