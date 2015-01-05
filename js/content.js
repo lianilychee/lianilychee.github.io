@@ -8,7 +8,7 @@ var CONTENT = {
 					'folio/icf/thumb.gif',
 					'ICF PROSTHETICS',
 					'Making below-the-elbow prostheses cheaper and easier to use.',
-					['tag-robo', 'tag-design']	],
+					['tag-robo' /*, 'tag-design' */]	],
 
 		imemio = [	'imemio',
 					'folio/imemio/thumb.gif',
@@ -58,11 +58,12 @@ var CONTENT = {
 					'Mapping Mandarin, Cantonese, and Fukien to written Chinese characters.',
 					['tag-software']	],
 
-		bc = 	[	'bc',
+	/*	bc = 	[	'bc',
 					'folio/bc/thumb-compressed.gif',
 					'BIRTH CONTROL EFFICACY',
 					"Analysis of BMI on The Pill's efficacy.",
 					['tag-software']	],
+	*/
 		
 	],
 }
