@@ -76,8 +76,11 @@ nav {
 .section-container {
 	float: center;
 	width: 920px;  /* Width must be some number of pixels less than the nav width to compensate for padding */
-	margin-top: 90px; margin-left: auto; margin-right: auto;
-	padding: 10px; padding-top: 100px; padding-left: 70px;
+	margin-top: 90px; 
+	margin-left: auto; margin-right: auto;
+	padding: 10px; 
+	padding-top: 25px; 
+	padding-left: 70px;
 	background: white;
 }
 
@@ -92,6 +95,7 @@ nav {
 
 	#portfolio a {
 		background: white;
+		/*margin-top: 100px;*/
 	}
 
 		#filter-options { font-weight: bold; }
