@@ -12,7 +12,7 @@ var CONTENT = {
 
 		imemio = [	'imemio',
 					'folio/imemio/thumb.gif',
-					'IMEM.IO',
+					'IMEMIO',
 					'Deep Twitter analysis and a start-up experience.',
 					['tag-software', 'tag-design']	],
 

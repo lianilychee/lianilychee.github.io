@@ -28,20 +28,68 @@
 	<!-- *** SECTIONS *** -->
 	<div id='portfolio' class='section-container content'>
 
-		<h1>imem.io</h1>
+		<h1>Imem.io</h1>
 
-		<p>Summer 2014 was the summer that I stepped way out of my comfort zone.  Up till that point, I had done mostly mechanical things.  Designing and fabricating a robot's drive-train was, after all, my first introduction to engineering and roboticsOver the course of eight weeks, I worked with three other peers to develop a smarter, cheaper, under-the-elbow prosthetic arm.  The result was a $170, 0.981 pound</p>
+		<p>Summer 2014 was a rollercoaster of learning experiences.  I worked at <a href='http://www.stresearch.com' target='_blank'>Systems &amp; Technology Research (STR)</a>, a small software defense contractor.  I worked with two other Olin interns to commercialize STR's tweet-grouping technology, originally developed for DARPA intelligence analysts.  We did everything from identifying users, designing and implementing a new UI and backend tweaks, conducting usability tests all the way to handling marketing and customer relations.  I began the summer with zero software experience and anxious; twelve weeks later, I left having developed a deployed webapp and confident in my abilities to figure my way through a software challenge.</p>
 
-		<p>I spearheaded development of the arm and fingers.</p>
+		<h2>A Fast Walk Through Imemio</h2>
 
-		<p>Eight prototypes in eight weeks</p>
+		<p>Imemio (eye-mehm-io) is a webapp that allows the user to, with a quick topic search, get a finger on the pulse of Twitter going-ons.  The search returns groups of Tweets rather than thousands of individual Tweets, allowing the user to get a quick glimpse into the lay of the land.</p>
 
+		<img class='content-image' src='imemio-search.png' style='width:100%' border='1px' >
+		<div class='content-caption'>Search and results for the query "game."  Current example is using data from an old dataset.<br>(1) Total number of groups from search.  (2)  The number of Tweets in a group.  (3) The common keywords in each group.<br>(4) Group sorting capabilities: relevance, date/time, group size.  (5) Timestamp of the earliest Tweet in group.</div>
+
+		<br><p>As useful as high-level overviews are, Imemio shines once a group is selected.  An visually-rich dashboard is displayed, at once providing information to questions such as: How do people feel about this topic?  Who is talking about it, and by how much?</p>
+
+		<img class='content-image' src='imemio-overview.png' style='width:100%' border='1px' >
+		<div class='content-caption'>Imemio in action: Twitter response to Sayeeda Warsi's resignation from her post as UK Minister, August 2014.</div>
+
+		<p>The left side of the above image shows the group and its component Tweets.  These Tweets are sortable by when each Tweet was posted, the Tweet's sentiment (positive/negative), and the number of followers the Tweet's author had.</p>
+
+		<p>The right side of the screen provide information depth.  The bar chart (top) shows 150 Tweets - either the most viewed or the most polar 150, based on the user's choice.  These 150 can further be sorted by the number of views (bar height) or sentiment (bar color).</p>
+
+		<p>At the center, the sunburst displays how many of the Tweets were favorited or retweeted, information that can be used to extrapolate how viral the group is.  The histogram provides retweet information detail: how many tweets were retweeted, and by how much?</p>
+
+		<p>The timeline at the bottom shows the volume of Tweets over time.  Subplots display Tweet sentiment over time.</p>
+
+		<p>Finally, all the visuals can be selected for greater resolution.  The visuals update to represent that selection.  Once a selection is made, the user can sort for further analysis.  For example:</p>
+
+		<img class='content-image' src='imemio-downselect.png' style='width:100%' border='1px' >
+
+		<p>This shows selection in the bar chart, specifically selection of the most positive of the most viewed Tweets in the group.  All the visuals - the Tweets on the left, the sunburst, histogram, and timeline on the right - all reflect that change.  The ability to select and sort allows the user to gain greater insight to topics of interest.</p>
+
+
+		<h2>Behind the Scenes</h2>
+
+		<div class='content-image'>
+			<img src='users-0.jpg' height='250px'> &nbsp;
+			<img src='users-1.jpg' height='250px'> &nbsp;
+			<img src='users-2.jpg' height='250px'> &nbsp;
+			<img src='users-5.jpg' height='250px'> &nbsp;
+		</div>
+		<div class='content-caption'>Identifying user groups and their respective needs, values, and aspirations.</div>
+
+		<br>
+
+		<div class='content-image'>
+			<img src='redesign-purpose.jpg' height='300px'> &nbsp;
+			<img src='redesign-layout.jpg' height='300px'> &nbsp;
+		</div>
+		<div class='content-caption'>Figuring out the UI / UX.</div>
+
+		 <!-- Starting with a tool built for intelligence analysts, we identified a user group, stressed out about some design decisions, and rolled out iterative prototypes - with user tests and beta deploys in between, of course. We did everything from design and implementation of a new UI to backend additions, marketing, and customer relations - it was the full corporate startup experience, in one awesome summer. -->
+
+		<p></p>
+
+		
 		<div class='key-points'>
 			<h2>Links</h2>
 
-			<p><a href='http://olinpoeprojects.wix.com/icfprosthetics' target='_blank'>Project Documentation</a></p>
+			<p><a href='http://imem.io/meme-prop/index.html' target='_blank'>Imemio website</a>.  Note: Dead link; STR has since stopped hosting the site.</p>
 
-			<p><a href='http://olinpoeprojects.wix.com/thingsthatmatter' target='_blank'>DIY community facing site</a></p>
+			<p><a href='https://drive.google.com/file/d/0B55vsX2B3wPOWEhrMUlXS3E1VTA/view?usp=sharing' target='_blank'>Imemio documentation</a></p>
+
+			<p><a href='https://drive.google.com/file/d/0B55vsX2B3wPONjZGaFFzZDQtZkk/view?usp=sharing' target='_blank'>Market research</a> compiled to help in determining our niche.</p>
 
 		</div>
 
