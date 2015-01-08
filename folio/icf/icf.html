@@ -30,16 +30,60 @@
 
 		<h1>ICF PROSTHETICS</h1>
 
-		<p>Over the course of eight weeks, I worked with three other peers to develop a smarter and cheaper under-the-elbow prosthetic arm.  The result was a $170, 0.981 pound arm that could </p>
+		<p>What the under-the-elbow prosthesis market looks like: fork over $90K for a high-tech <a href='http://en.wikipedia.org/wiki/Prosthesis#Myoelectric' target='_blank'>myoelectric</a> or around $5K for a simple, <a href='http://www.oandplibrary.org/al/images/1955_03_026/tmp48A-26.jpg' target='_blank'>shoulder-actuated claw</a>.  Both are cripplingly expensive and require extensive therapy to use effectively.  Three peers and I thought this was a ridiculous paradigm, so we developed a smarter and cheaper under-the-elbow prosthetic arm.  Two months later, the result was a $170, 0.981 pound arm that maps residual limb movement to prosthetic arm and hand motion. </p>
 
-		<p>I spearheaded development of the arm and fingers.</p>
+		<p>See it in action!</p>
+		<div class='content-image'><iframe width="560" height="315" src="http://www.youtube.com/embed/9XNJhg66nss?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-		<p>Eight prototypes in eight weeks</p>
+		<p>I spearheaded development of the arm and fingers.  I've always had this idea that the Agile/Scrum workflow framework is better suited for software rather than hardware since there is zero manufacturing cost, both in terms of materials and manufacturing time.  <b><i>I decided to seize the opportunity to challenge my assumptions.  By following the Agile/Scrum framework and utilizing rapid prototyping (3D printers, lasercutters) we produced eight prototypes in eight weeks, learning incrementally with each revision.</i></b></p>
+
+		<img class='content-image' src='timeline.png' width='70%' border='1px' style='border-color: gray'>
+		<div class='content-caption'>Tmeline for the eight arm and four finger joint revisions.  Development followed the pace of the four two-week sprints.</div>
+
+		<h2>Arm Development</h2>
+
+		<p>There were several mechanical design challenges to overcome:</p>
+
+		<p><b>Challenge 1:</b>  Space constraints.  We intended for our prosthesis to be adaptable to users of all ages, children especially.  As such, the smallest arm dimensions were chosen: 6" in length and 3" in diameter at the widest point.</p>
+
+		<p><b>Solution:</b>  Up till REV-03, a gearmotor, Arduino Uno and Adafruit shield were used as the means of actuation and the microcontroller, respectively.  Clever component placement could only go so far, but the fact remained that the components, courtesy of the various stockrooms on campus, were just too bulky.  Investing in a continuous rotation high-torque servo and Arduino Nano meant that we had much smaller components and could ditch the Adafruit shield.</p>
+
+		<p><b>Challenge 2:</b>  Mass constraints and distribution.  To reduce the amount of torque the user experiences on his or her residual limb, as much of the arm's "insides" had to be packed as close to the elbow-end as possible.  Now, refer to Challenge 1.</p>
+
+		<p><b>Solution:</b>  Much CAD, clever component placement.  Prototypes from REV-04 onwards, thanks to the smaller microcontroller and actuation, is weighted towards the elbow end of the prosthesis.</p>
+
+		<p><b>Challenge 3:</b>  Accessible. Ensuring the design is easily alterable so that those in the DIY community can customize as necessary.</p>
+
+		<p><b>Solution:</b>  An experiment in Solidworks' linked dimensions, which allows the user to modify a single dimension and have all other components scale accordingly.</p>
+
+		<br><br>
+
+		<div class='content-image'>
+			<img src='rev-01.jpg' height='150px'>&nbsp;
+			<img src='rev-02.jpg' height='150px'>&nbsp;
+			<img src='rev-03.jpg' height='150px'>&nbsp;
+		</div>
+
+		<div class='content-image'>
+			<img src='rev-04.jpg' height='150px'>&nbsp;
+			<!-- <img src='rev-05.jpg' height='200px'>&nbsp; -->
+			<img src='rev-06.jpg' height='150px'>&nbsp;
+			<!-- <img src='rev-07.jpg' height='200px'>&nbsp; -->
+			<img src='rev-08.jpg' height='150px'>&nbsp;
+		</div>
+
+		<div class='content-caption'>Left to right, top to bottom: REV-01, -02, -03, -04, -06, and -08.</div>
+
+		<h2>Finger Development</h2>
+
+		<img class='content-image' src='finger-xsection.png' width='50%' border='1px' style='border-color:gray'>
+		<div class='content-caption'>Cross section of a single finger joint.</div>
+
+		<p>(1) Trapezoidal shape allows each joint to curl in on itself. (2) When a finger is curled, the point nests in the corresponding slot (2b) and prevents the finger from twisting. (3) Spring steel, which keeps the fingers in the open position, is routed through this slot. (4) Each finger joint is hollowed to reduce mass. (5) 1/16" dowel pins are press-fit through this hole to keep the spring steel in place. (6) Routing holes for the fishing line and attached to a servo within the arm. (7) Routing for sensor wiring.</p>
+
 
 		<div class='key-points'>
 			<h2>Links</h2>
-
-			<div class='content-image'><iframe width="560" height="315" src="http://www.youtube.com/embed/9XNJhg66nss?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 			<p><a href='http://olinpoeprojects.wix.com/icfprosthetics' target='_blank'>Project Documentation</a></p>
 
