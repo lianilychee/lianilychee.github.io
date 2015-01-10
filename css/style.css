@@ -126,8 +126,9 @@ nav {
 }
 
 	#selfie {
-		height: 220px;
+		width: 155px; height: 220px; background: url('../images/self.png') no-repeat left top;
 	}
+	#selfie:hover { background-position: -156px 0px; }
 
 	#icons-container {
 		width: 100%; height: 40px;
