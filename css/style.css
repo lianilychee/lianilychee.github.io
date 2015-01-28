@@ -1,24 +1,18 @@
 /********** OVERARCHING STYLES **********/
 
-/* COMMENT EHERE  */
-
 @charset 'UTF-8';
 
 @font-face {
 	font-family: 'Lato', sans-serif;
 	src: 'http://fonts.googleapis.com/css?family=Lato:400,700';
-	/* https://www.google.com/fonts#UsePlace:use/Collection:Lato */
 }
 
 @font-face {
 	font-family: 'Droid Serif', serif;
 	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic';
-	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
 }
 
-h1 {
-	font-family: 'Lato';
-}
+h1 { font-family: 'Lato'; }
 
 p { font-family: 'Droid Serif'; }
 
