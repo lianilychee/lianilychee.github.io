@@ -1,0 +1,25 @@
+1438304302
+s:626:"<h1>H1 HEADING</h1>
+<h2>H2 HEADING</h2>
+<h3>H3 HEADING</h3>
+<h4>H4 HEADING</h4>
+<h5>H5 HEADING</h5>
+<p><strong>Bold text wrapped in double asterisks</strong> // <em>Italicized text wrapped in single underscores</em> // <del>Striked out text wrapped in double tildes</del></p>
+<blockquote>
+<p>Quotes wrapped in sideways carrots</p>
+<blockquote>
+<p>Nested quotes</p>
+<blockquote>
+<p>Yellow notice = 3 carrots</p>
+<blockquote>
+<p>Red notice = 4 carrots</p>
+<blockquote>
+<p>Blue notice = 5 carrots</p>
+<blockquote>
+<p>Green notice = 6 carrots</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>";
