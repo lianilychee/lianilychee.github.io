@@ -1,5 +1,0 @@
----
-title: Redirect
-routable: false
----
-

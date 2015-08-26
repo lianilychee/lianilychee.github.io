@@ -1,0 +1,162 @@
+/********** OVERARCHING STYLES **********/
+
+@charset 'UTF-8';
+
+@font-face {
+	font-family: 'Lato', sans-serif;
+	src: 'http://fonts.googleapis.com/css?family=Lato:400,700';
+	/* https://www.google.com/fonts#UsePlace:use/Collection:Lato */
+}
+
+@font-face {
+	font-family: 'Droid Serif', serif;
+	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic';
+	/* https://www.google.com/fonts#UsePlace:use/Collection:Droid+Serif */
+}
+
+body {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+h1 {font-family: 'Lato'; }
+
+p { font-family: 'Droid Serif'; }
+
+a, a:visited { text-decoration: none; color: black; }
+
+a:hover { color: #2C85C9; }
+
+/* The height and width values includes padding */
+td { width: 450px; height: 300px; }
+
+
+
+/********** SECTIONS **********/
+.section-container {
+	float: center;
+	width: 920px;  /* Width must be some number of pixels less than the nav width to compensate for padding */
+	margin-top: 90px; 
+	margin-left: auto; margin-right: auto;
+	padding: 10px; 
+	padding-top: 25px; 
+	padding-left: 70px;
+	background: white;
+}
+
+	#about { 
+		position: fixed; 
+		display: inline-block;
+		margin-left: auto; margin-right: auto;
+		height: 100%;
+		top: 4px;
+		background: white;
+	}
+
+	#portfolio a {
+		background: white;
+	}
+
+		#filter-options { font-weight: bold; }
+
+
+
+/***** ABOUT SECTION *****/
+#about-content {
+	width: 900px; height: 500px;
+	padding-top: 50px;
+}
+
+#blurb {
+	height: 450px;
+	float: left;
+	text-align: right; font-size: 30px;
+	padding: 50px; padding-left: 90px;
+}
+
+	#salutation{
+		font-size: 60px;
+		font-family: 'Lato';
+	}
+
+#media {
+	float: left;
+	height: 300px;
+	padding-top: 65px;
+}
+
+	#selfie {
+		width: 155px; height: 220px; background: url('../images/self.png') no-repeat left top;
+	}
+	#selfie:hover { background-position: -156px 0px; }
+
+	#icons-container {
+		width: 100%; height: 40px;
+		padding-top: 5px;
+	}
+
+		#icon-email { width: 32px; height: 32px; background: url('../images/icon-email.png') no-repeat left top; float: left; margin-left: 10px; margin-right: 20px;}
+		#icon-email:hover{ background-position: -32px 0px; }
+		
+		#icon-linkedin { width: 32px; height: 32px; background: url('../images/icon-linkedin.png') no-repeat left top; float: left; margin-right: 20px;}
+		#icon-linkedin:hover{ background-position: -32px 0px; }
+
+		#icon-github { width: 32px; height: 32px; background: url('../images/icon-github.png') no-repeat left top; float: left;}
+		#icon-github:hover{ background-position: -32px 0px; }
+
+
+/***** PORTFOLIO SECTIONS *****/
+.grid-container {}
+
+.item{
+	margin-bottom: 20px;
+	height: 250px; width: 400px;
+}
+
+.item-image {
+	height: 195px;
+	width: 400px;
+	overflow: hidden;
+}
+
+	.thumbnail{ width: 400px; }
+
+.item-title {
+	background-color: white;
+	font-family: 'Lato'; font-size: 30px;
+	padding-top: 5px; padding-bottom: 5px;
+}
+
+.item-blurb {
+	font-family: 'Droid Serif'; font-style: italic;
+	background-color: white;
+}
+
+
+/***** CONTENT SECTIONS*****/
+.content { /*Other dependency is .section-container ;*/
+	padding: 50px; padding-top: 25px;
+	width: 900px;
+}
+
+.content a { color: #9234C9; }
+
+.content a:hover { color: #2C85C9; }  /* Figure out why this reduncancy is needed */
+
+.content p { }
+
+.key-points {  }
+
+.content-image {
+	display: table;
+	margin-left: auto; margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.content-caption { 
+	display: table;
+	margin-left: auto; margin-right: auto;
+	font-style: italic;
+	text-align: center;
+}
