@@ -3,6 +3,14 @@
 @charset 'UTF-8';
 
 @font-face {
+	font-family: 'liani-font';
+	src:
+		local('liani-font'),
+		url('css/liani.ttf'),
+		format('truetype');
+}
+
+@font-face {
 	font-family: 'Lato', sans-serif;
 	src: 'http://fonts.googleapis.com/css?family=Lato:400,700';
 }
@@ -12,16 +20,16 @@
 	src: 'http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic';
 }
 
-h1 {font-family: 'Lato'; }
-/*h1 {font-family: liani-font}*/
+/*h1 {font-family: 'Lato'; }*/
+h1 {font-family: 'liani-font'}
 
 p { font-family: 'Droid Serif'; }
 
-a { text-decoration: underline; }
+a { color: #2C85C9; text-decoration: none; }
 
-a:visited { text-decoration: none; color: black; }
+a:visited { text-decoration: none; color: #2C85C9; }
 
-a:hover { color: #2C85C9; }
+a:hover { background-color: #2C85C9; color: white; }
 
 
 /********** FOLIO **********/
