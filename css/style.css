@@ -62,10 +62,6 @@ ul {list-style-type: none; }
 
 
 /********** CONTENT **********/
-.content {
-	padding-left: 30px;
-	width: 600px;
-}
-
+.content { padding-left: 30px; width: 600px; }
 .content a { color: #2C85C9; text-decoration: none; }
 .content a:hover { color: white; }
