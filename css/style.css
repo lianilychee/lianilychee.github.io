@@ -7,6 +7,10 @@
 	src: url('liani.ttf');
 }
 
+a { color: #2C85C9; text-decoration: none; }
+a:visited { text-decoration: none; color: #2C85C9; }
+a:hover { color: white; background-color: #2C85C9; }
+
 nav { 
 	font-family: 'liani-font';
 	font-size: 2em;
@@ -14,11 +18,7 @@ nav {
 
 h1 {font-family: 'liani-font'}
 
-a { color: #2C85C9; text-decoration: none; }
 
-a:visited { text-decoration: none; color: #2C85C9; }
-
-a:hover { color: white; background-color: #2C85C9; }
 
 
 /********** PROJECTS **********/
@@ -48,12 +48,12 @@ a:hover { color: white; background-color: #2C85C9; }
 .title { width: 300px; }
 .blurb { width: 300px; word-wrap: break-word;}
 
-.title a, .title a:visited { 
+div.title, div.title:visited { 
 	text-decoration: none;
 	color: black; 
 }
 
-.title a:hover {
+div.title:hover {
 	color: white;
 	background-color: #2C85C9;
 }
