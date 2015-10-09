@@ -19,8 +19,6 @@ nav {
 h1 {font-family: 'liani-font'}
 
 
-
-
 /********** PROJECTS **********/
 
 .flex-container {
@@ -41,24 +39,31 @@ h1 {font-family: 'liani-font'}
   flex-wrap: wrap;
 } 
 
+
 /********** THUMBNAILS **********/
 
 .thumb { width: 325px; margin-bottom: 10px}
-
+.img-border { border-style: solid; border-width: 1px; border-color: black; }
 .title { width: 300px; }
-.blurb { width: 300px; word-wrap: break-word;}
+.blurb { width: 300px; word-wrap: break-word; }
 
 div.title, div.title:visited { 
 	text-decoration: none;
 	color: black; 
 }
 
-div.title:hover {
-	color: white;
-	background-color: #2C85C9;
+ul {list-style-type: none; }
+
+.thumb-img:hover {
+  filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
-ul {list-style-type: none; }
+/*.thumb-img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}*/
 
 
 /********** CONTENT **********/
