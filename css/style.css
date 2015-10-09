@@ -1,4 +1,4 @@
-/********** OVERARCHING STYLES **********/
+/********** FONTS **********/
 
 @charset 'UTF-8';
 
@@ -7,17 +7,32 @@
 	src: url('liani.ttf');
 }
 
+@font-face {
+  font-family: 'courier';
+  src: url('cour.ttf');
+}
+
+h1 {
+  font-family: 'liani-font';
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+/********** GLOBAL-TYPE **********/
+
+nav { 
+  font-family: 'liani-font';
+  font-size: 3em;
+}
+
+body {
+  font-family: courier;
+  font-size: 0.75em;
+}
+
 a { color: #2C85C9; text-decoration: none; }
 a:visited { text-decoration: none; color: #2C85C9; }
 a:hover { color: white; background-color: #2C85C9; }
-
-nav { 
-	font-family: 'liani-font';
-	font-size: 2em;
-}
-
-h1 {font-family: 'liani-font'}
-
 
 /********** PROJECTS **********/
 
@@ -42,10 +57,28 @@ h1 {font-family: 'liani-font'}
 
 /********** THUMBNAILS **********/
 
-.thumb { width: 325px; margin-bottom: 10px}
-.img-border { border-style: solid; border-width: 1px; border-color: black; }
-.title { width: 300px; }
-.blurb { width: 300px; word-wrap: break-word; }
+.thumb { 
+  width: 320px; 
+  margin-bottom: 10px
+}
+
+.img-border { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+}
+
+.title { 
+  width: 300px; 
+  font-family: 'liani-font'; 
+  font-size: 2em; 
+  padding-top: 5px;
+}
+
+.blurb { 
+  width: 300px; 
+  word-wrap: break-word; 
+}
 
 div.title, div.title:visited { 
 	text-decoration: none;
