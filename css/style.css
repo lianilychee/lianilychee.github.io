@@ -87,16 +87,25 @@ div.title, div.title:visited {
 
 ul {list-style-type: none; }
 
-.thumb-img:hover {
+/*.thumb-img:hover {
   filter: gray;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
+}*/
+
+.thumb-img {
+  filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+/*  filter: none;
+  -webkit-filter: grayscale(0);*/
 }
 
-/*.thumb-img {
-  filter: none;
+.thumb-img:hover {
+  filter: gray;
+  filter: grayscale(0);
   -webkit-filter: grayscale(0);
-}*/
+}
 
 
 /********** CONTENT **********/
