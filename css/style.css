@@ -20,14 +20,16 @@ h1 {
 
 /********** GLOBAL-TYPE **********/
 
-nav { 
+nav {
+  padding-top: 15px;
+  padding-left: 30px;
   font-family: 'liani-font';
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 body {
   font-family: courier;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 a { color: #2C85C9; text-decoration: none; }
