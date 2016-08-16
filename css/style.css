@@ -18,6 +18,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-family: 'liani-font';
+  font-size: 2em;
+  font-weight: normal;
+}
+
 /********** GLOBAL-TYPE **********/
 
 nav {
@@ -89,18 +95,10 @@ div.title, div.title:visited {
 
 ul {list-style-type: none; }
 
-/*.thumb-img:hover {
-  filter: gray;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}*/
-
 .thumb-img {
   filter: gray;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
-/*  filter: none;
-  -webkit-filter: grayscale(0);*/
 }
 
 .thumb-img:hover {
@@ -111,6 +109,6 @@ ul {list-style-type: none; }
 
 
 /********** CONTENT **********/
-.content { padding-left: 30px; width: 600px; }
+.content { padding-left: 30px; width: 625px; }
 .content a { color: #2C85C9; text-decoration: none; }
 .content a:hover { color: white; }
