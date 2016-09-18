@@ -4,4 +4,4 @@ document.getElementById('nav').innerHTML =
     "<a href = '../projects.html' " +
         "style = 'text-decoration: none; border-bottom: 3px dotted'>" +
         "projects</a> // " +
-    "<a href='http://www.lianilychee.wordpress.com' target='_blank'>blog</a>"
+    "<a href='../lianilye_resume_f16.pdf' target='_blank'>resume</a>"
