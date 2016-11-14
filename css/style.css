@@ -60,7 +60,11 @@ a:hover { color: white; background-color: #2C85C9; }
 .wrap { 
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-} 
+}
+
+.hide {
+  display: none;
+}
 
 
 /********** THUMBNAILS **********/
