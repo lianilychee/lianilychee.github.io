@@ -111,6 +111,19 @@ ul {list-style-type: none; }
   -webkit-filter: grayscale(0);
 }
 
+#zpd {
+  display: block;
+  width: 300px;
+  height: 150px;
+  background-image:url('../images/zpd/thumb.png');
+  background-size: 300px 150px;
+}
+
+#zpd:hover {
+  background-image:url('../images/zpd/thumb_colored.png');
+  background-size: 300px 150px;
+}
+
 
 /********** CONTENT **********/
 .content { padding-left: 30px; width: 625px; }
