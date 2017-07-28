@@ -42,6 +42,11 @@ a { color: #2C85C9; text-decoration: none; }
 a:visited { text-decoration: none; color: #2C85C9; }
 a:hover { color: white; background-color: #2C85C9; }
 
+ul {
+  list-style-type: circle;
+  color: black;
+}
+
 /********** ABOUT **********/
 #left {
   float: left;
@@ -106,8 +111,6 @@ div.title, div.title:visited {
 	text-decoration: none;
 	color: black; 
 }
-
-ul {list-style-type: none; }
 
 .thumb-img {
   filter: gray;
