@@ -10,4 +10,4 @@ document.getElementById('nav').innerHTML =
         "style = 'text-decoration: none; border-bottom: 3px dotted'>" +
     	"work</a> // " +
     "<a href = '../about.html'>about</a> // " +
-    "<a href='../lianilye_resume_f16.pdf' target='_blank'>resume</a>"
+    "<a href='../lianilye_resume_2017_07.pdf' target='_blank'>resume</a>"
