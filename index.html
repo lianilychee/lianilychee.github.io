@@ -25,12 +25,12 @@ L I A N I <b>L Y E</b>
     <div style='padding: 0px 30px 30px 30px'>
         <p><i>Status: Page last updated November 2017.</i></p>
 
-        <a href='javascirpt:void(0)' id='all'>All</a>  |  
-        <a href='javascirpt:void(0)' id='pdev'>New product development</a>  |  
-        <a href='javascirpt:void(0)' id='bdev'>Business development</a>  |  
-        <a href='javascirpt:void(0)' id='user'>Stakeholder engagement</a>  |  
-        <a href='javascirpt:void(0)' id='engn'>Engineering</a>  |  
-        <a href='javascirpt:void(0)' id='pm'>Project management</a>
+        <a href='javascirpt:void(0)' class='filter' id='all' style='background-color: #2C85C9; color: white'>All</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='pdev'>New product development</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='bdev'>Business development</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='user'>Stakeholder engagement</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='engn'>Engineering</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='pm'>Project management</a>
 
     </div>
 
@@ -208,13 +208,23 @@ L I A N I <b>L Y E</b>
         }
     };
 
-    // filtering: all, neng, robo, code, mech
-    $('#all').click( function() { hide('.all'); });
-    $('#pdev').click( function() { hide('.pdev'); });
-    $('#bdev').click( function() { hide('.bdev'); });
-    $('#user').click( function() { hide('.user'); });
-    $('#engn').click( function() { hide('.engn'); });
-    $('#pm').click( function() { hide('.pm'); });
+    function indicate(selectedFilter) {
+        // remove indication for all other selectors except the one clicked
+        $('.filter').not(selectedFilter).css('background-color','white');
+        $('.filter').not(selectedFilter).css('color','#2C85C9');
+
+        // apply the indication to the clicked one
+        $(selectedFilter).css('background-color','#2C85C9');
+        $(selectedFilter).css('color','white');
+    }
+
+    // filtering
+    $('#all').click( function() { hide('.all'); indicate('#all')});
+    $('#pdev').click( function() { hide('.pdev'); indicate('#pdev')});
+    $('#bdev').click( function() { hide('.bdev'); indicate('#bdev')});
+    $('#user').click( function() { hide('.user'); indicate('#user')});
+    $('#engn').click( function() { hide('.engn'); indicate('#engn')});
+    $('#pm').click( function() { hide('.pm'); indicate('#pm')});
 
 </script>
 
