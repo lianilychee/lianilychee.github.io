@@ -211,12 +211,9 @@ L I A N I <b>L Y E</b>
     function indicate(selectedFilter) {
         // remove indication for all other selectors except the one clicked
         $('.filter').not(selectedFilter).css('text-decoration','none');
-        // $('.filter').not(selectedFilter).css('color','#2C85C9');
 
         // apply the indication to the clicked one
         $(selectedFilter).css('text-decoration','underline');
-        // $(selectedFilter).css('background-color','#2C85C9');
-        // $(selectedFilter).css('color','white');
     }
 
     // filtering
