@@ -25,7 +25,7 @@ L I A N I <b>L Y E</b>
     <div style='padding: 0px 30px 30px 30px'>
         <p><i>Status: Page last updated November 2017.</i></p>
 
-        <a href='javascirpt:void(0)' class='filter' id='all' style='background-color: #2C85C9; color: white'>All</a>  |  
+        <a href='javascirpt:void(0)' class='filter' id='all' style='text-decoration: underline'>All</a>  |  
         <a href='javascirpt:void(0)' class='filter' id='pdev'>New product development</a>  |  
         <a href='javascirpt:void(0)' class='filter' id='bdev'>Business development</a>  |  
         <a href='javascirpt:void(0)' class='filter' id='user'>Stakeholder engagement</a>  |  
@@ -210,12 +210,13 @@ L I A N I <b>L Y E</b>
 
     function indicate(selectedFilter) {
         // remove indication for all other selectors except the one clicked
-        $('.filter').not(selectedFilter).css('background-color','white');
-        $('.filter').not(selectedFilter).css('color','#2C85C9');
+        $('.filter').not(selectedFilter).css('text-decoration','none');
+        // $('.filter').not(selectedFilter).css('color','#2C85C9');
 
         // apply the indication to the clicked one
-        $(selectedFilter).css('background-color','#2C85C9');
-        $(selectedFilter).css('color','white');
+        $(selectedFilter).css('text-decoration','underline');
+        // $(selectedFilter).css('background-color','#2C85C9');
+        // $(selectedFilter).css('color','white');
     }
 
     // filtering
