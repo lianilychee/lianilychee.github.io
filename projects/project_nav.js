@@ -2,7 +2,7 @@ document.getElementById('head').innerHTML =
 	"<title>Work - Liani Lye</title>" +
 	"<link rel='stylesheet' href='../../css/style.css'>" +
     "<link rel='stylesheet' href='../../css/prototype_style.css'>" +
-    "<link rel='icon' type='image/png' href='../../favicon.png'>"
+    "<link rel='icon' type='image/png' href='../../img/favicon.png'>"
 
 document.getElementById('nav').innerHTML = 
     "L I A N I <b>L Y E</b> // " +
