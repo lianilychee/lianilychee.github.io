@@ -1,0 +1,7 @@
+RESUME CHANGE
+
+Make sure to change references in:
+- index.html nav
+- about.html nav
+- about.html below picture
+- projects/project_nav.js
