@@ -51,11 +51,6 @@ nav {
   background-image: url('../img/underlines/dotted.png');
 }
 
-a.dotted-container:hover {
-  display: inline-block;
-  background-image: url('../img/underlines/test.png');
-}
-
 /* currently not used UGH */
 .current {
   display: inline-block;
@@ -191,6 +186,7 @@ div.title, div.title:visited {
 
 .content-duo {
   overflow: auto;
+  display: block;
 }
 
 .content-left {
@@ -205,6 +201,11 @@ div.title, div.title:visited {
   width: 325px;
   padding-top: 0;
   padding-right: 0;
+}
+
+.width-control {
+  max-width: 100%; 
+  padding-top: 10px;
 }
 
 /*div > img {
