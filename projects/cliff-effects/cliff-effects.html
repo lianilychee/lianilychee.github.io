@@ -1,46 +1,159 @@
-<!-- Icons courtesy of  -->
-
 <html>
 
-<head id='head'></head>
-<nav id = 'nav'></nav>
-<script src = '../project_nav.js'></script>
+  <head id='head'></head>
+  <nav id = 'nav'></nav>
+  <script src = '../project_nav.js'></script>
 
-<body>
+  <body>
 
     <!-- *** CONTENT *** -->
     <div class='content'>
-        <h1>CLIFF EFFECTS MODELING TOOL</h1>
+      <h1>CLIFF EFFECTS MODELING TOOL</h1>
 
-        <p style='margin: 0 20px 0 20px; padding: 0 20px 0 10px; border-left-style: dotted; border-width: 1px'>
-        <b>cliff effect:</b> 
-        You are receiving government benefits, and you get a raise. But now that your income is higher, you no longer make the cutoff for the benefits you receive. You may be taking home more money, but your situation is worse. Some of your benefits drop to nothing, or almost nothing. You've fallen off "the cliff."
+      <h2>Why Model Cliff Effects?</h2>
+
+        <p style='margin-bottom: 0px;'>
+          <b><i>Duration:</i></b> August 2017 - October 2017<br>
+          <b><i>Partners:</i></b>
+            <ul style='margin-top: 2px;''>
+              <li> <a href='http://www.prohope.org/about/'>Project Hope</a> supports low-income mothers with education, jobs, housing, and emergency services, and</li>
+              <li><a href='https://www.umb.edu/csp'>Center for Social Policy</a> "provides expertise on policies and practices to eliminate social and economic inequities."</li>
+            </ul>
         </p>
 
-        <p>The result of a collaboration between <a href='http://www.prohope.org/about/'>Project Hope</a>, <a href='https://www.umb.edu/csp'>Center for Social Policy</a>, and <a href='http://www.codeforboston.org'>Code for Boston</a>, the tool models how much assistance a client would receive from various benefits programs.  With this previously missing quantitative understanding, Project Hope case workers are better equipped to do financial planning with their clients.</p>
+        <p>As of this writing, there is no tool that shows how much assistance a person would receive from various benefits programs at once.  (Amount received per program is partially dependent upon income, which other program assistance is classified as.)</p>
 
-        <h2>My Role: Project / Product Manager</h2>
+        <p>We were tasked to build such a the previously missing quantitative understanding to prevent the "cliff effect" phenomena.  <u>With our model, Project Hope case workers are better equipped to conduct financial planning with their clients.</u></p>
 
-        <p>When I joined this Code for Boston project in August 2017, it had been in motion for nine months.  At that point, user research and benefits eligibility research had been conducted, and a very scrappy front-end had been built.</p>
+        <p style='margin: 0 25px 0 25px; padding: 0 15px 0 15px; border-left-style: dotted; border-width: 1px'>
+          <b><i>cliff effect:</i></b> You are receiving government benefits, and you get a raise. But now that your income is higher, you no longer make the cutoff for the benefits you receive. You may be taking home more money, but your situation is worse. Some of your benefits drop to nothing, or almost nothing. You've fallen off "the cliff."
+        </p>
 
-        <p>However, the volunteer team was <b>quickly losing members and direction</b> because of the team leads' sudden departure.  And, a recent meeting with the client revealed that <b>the tool needed to be totally redone</b>, because it was addressing the wrong concern as-it-stood, rendering former benefits eligibility research useless.</p>
+      <h2>My Role: Project / Product Manager</h2>
 
-        <p>To settle the turmoil, I quickly morphed my self-designated role as "designer" to include that of "product/project manager."  This meant there was little in the spectrum of high-level v. detail-oriented work I didn't do:  One moment would see me creating a mockup for a developer to follow; another, discussing the feature set for a particular milestone.</p>
+        <p>I joined the project in its execution phase.  The project had been in motion for 9 months prior, and user and benefits eligibility research had already been conducted.</p>
 
-        <h2>A Few Accomplishments</h2>
+        <p>My job was to:
+          <ul>
+            <li>Transform the scrappy, hacked-in-a-night frontend into a more robust and polished version, and </li>
+            <li>Halt member hemorrhage due to lack of direction.</li>
+          </ul>
+        </p>
 
-        <ul>
-            <li><b>Increased new member retention rate by 75%</b> <br>through simplifying onboarding process and immediately giving new members project easily actionable items</li><br>
-            <li><b>Delivered MVP to client in 6 weeks after pivot</b><br> by moving team to agile methodologies</li><br>
-            <li><b>Increased active work-time from 30min to 75min per person</b><br> by being an active facilitator and creating subteams</li>
-        </ul>
+        <p>To settle the turmoil, I quickly morphed my self-designated role as "designer" to include "product/project manager."  This meant there was little in the spectrum of high-level v. detail-oriented work I didn't do:  One moment would see me creating a mockup for a developer to follow; another, discussing the feature set for a particular milestone.</p>
+
+      <h2>#1: Retaining New Members</h2>
+
+        <h3 style='margin-top: 0px;'>Challenge</h3>
+
+          <p>The team was hemorrhaging members, old and new.  This was because meetings no longer had clear direction, caused by the former team leads' departure.</p>
+
+          <p>Meetings were being run by the software lead, who suddenly had the additional responsibilities of onboarding new members and providing direction to design members.  She was orginally simply tasked to provide direction to existing software members and develop code herself.</p>
+
+          <p>The 2-3 hours per 1 week afforded by Code for Boston meetings were not enough.</p>
+
+        <h3>Solution: Simplifying Onboarding</h3>
+
+          <p>Before I modified it, the onboarding process involved 4 different platforms (Slack channel, Trello board, Google Drive folder, and GitHub repository).  New members had to:
+            <ol>
+              <li>Obtain access to the platforms,</li>
+              <li>Familiarize selves with the platforms if necessary,</li>
+              <li>Read the entirety of the posted content of all the platforms.</li>
+            </ol>
+          </p>
+
+          <div class='content-duo'>
+
+            <img src='slackbot.png' class='content-right'>
+
+            <div class='content-left'>
+              <p>I reduced the meticulousness of the onboarding process by:
+                <ul>
+                  <li>Cutting the number of platforms involved from 4 indiscriminate ones to a subteam-dependent 2,</li>
+                  <li>Condensing information GitHub README (about the project, pertinent information, current focus, MVP definition), and</li>
+                  <li>Automating links to relevant documents and platforms.</li>
+                </ul>
+              </p>
+            </div>
+
+          </div>
+
+
+        <h3>Solution: Giving Responsibility to New Members</h3>
+
+          <p>Because the onboarding process much shorter, new members could join subteams the same day.  New members were then given easily actionable responsibilities, giving new members a sense of project investment and obligating them to continue returning.</p>
+
+          <p>To do so, I maintained close communication with subteam leads, working with them to constantly keep a backlog of issues specifically for new members to tackle.</p>
+
+          <p>These issues had to strike a balance: They had to be important yet not critical path or time-sensitive.  Otherwise, new members would feel like they were wasting time.</p>
+
+      <h2>#2: Managing Tool's Issues</h2>
+
+        <p>Before I joined the project, current and backlogged issues were managed on a single Trello board.</p>
+
+        <h3>Challenge: Limited Visibility</h3>
+
+          <img src='trello.png' style='max-width: 100%; padding-top: 10px'>
+
+          <p>The Trello board was extensive.  Team members had to scroll to see all categories, and the limited literal view meant difficulty keeping the figurative big picture in mind.</p>
+
+          <p>Yet it was important for individual members, not just subteam leads, to have the big picture because it allowed them to actively work towards te end goal.</p>
+
+        <h3>Challenge: Unfamiliarity</h3>
+
+          <p>There were two subteams: design and software.  Developers far outnumberd designers.  Existing developers had varying levels of experience with Trello, from novice to pro.</p>
+
+          <p>As such, the software lead also spent time on educating individual members as challenges like "how to add an issue" or "how to assign responsibilities".  Every moment spent on education regarding our issue management tool was time NOT spent on development.</p>
+
+        <h3>Challenge: Access Bottleneck</h3>
+
+          <p>To view and edit issues, new members needed to be granted access to the Trello board via username.  However, new members didn't necessarily have a Trello account and/or know of the service.  Consequently, a nontrivial amount of time was spent on education and granting access.</p>
+
+        <h3>Solution: Moving to GitHub Issues</h3>
+
+          <div class='content-duo'>
+            <img src='labels.png' class='content-right'>
+
+            <div class='content-left'>
+              <p>I decided to that the team would abandon Trello and move issues to GitHub Issues.  There was little resistance to the move because the inertia behind using Trello was so high.</p>
+
+              <p>To keep our GitHub issues manageable, I worked with a pair of team members to determine a few labels to categorize existing and future issues.  Labels could not be added.  The result: Ignore GitHub's preset labels and go with Beginner Friendly, Feature, Bug, Infrastructure, and Non-Code </p>
+            </div>
+
+          </div>
+
+          <p>Because we were already using GitHub to manage our code, an inbuilt issues board integrated more smoothly with.  Plus, issues could be added by anyone (like people we demo'd to), not just team members.</p>
+
+      <h2>#3: Managing Time Constraints</h2>
+
+        <h3 style='margin-top: 0px;'>Challenge</h3>
+
+          <p>Prior to my joining, project members had spent 9 months conducting interviews, user research, and benefits eligibility research.  Almost 1 year down the line, the liaisons wanted something concrete, and soon.</p>
+
+        <h3>Solution: Priority Stack</h3>
+
+          <p>Because of the limited time, I developed a "criteria for MVP" with subteam leaders and senior members who had previously interfaced with the partners.</p>
+
+          <p>Issues in GitHub were prioritized accordingly.  Ultimately, we were answering a Boolean question.  Our partners wanted to know if it was possible to determine assistance for multiple benefit programs at once.  If an issue was not in the priority stack, it was shelved for post MVP delivery.</p>
+
+          <p>We were certain that we could, so we focused on the features that would also convince our partners.</p>
+
+        <h3>Solution: Active Facilitating</h3>
+
+          <p>I actively curtailed extra discussion to keep work to the priority stack.  As a result, there was an active work-time increase from 30min to 75min per person.</p>
+
+      <h2>Conclusion</h2>
+
+        <p>I shut down inefficiencies as I saw them by streamlining processes and facilitating team work/discussion.  We delivered an MVP to our Project Hope liaison 8 weeks after I joined.</p>
+
+        <p>At that point, another project manager joined the team to carry the mantle, and I moved teams to work with the MA Attorney General's Office, building a <a href='../daca/daca.html'>tool for the 2018 DACA litigation.</a></p>
 
 <!--         <h2>Takeaways</h2>
-        
-        <p>Get out there and build a portfolio of ideas, approaches, tactics, etc. that help others understand who you are and what type of product manager you are / want to be.</p> -->
+      
+      <p>Get out there and build a portfolio of ideas, approaches, tactics, etc. that help others understand who you are and what type of product manager you are / want to be.</p> -->
   
     </div>
 
-</body>
+  </body>
 
 </html>
