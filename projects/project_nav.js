@@ -13,7 +13,7 @@ document.getElementById('head').innerHTML =
 //     "<a href='../../lianilye_resume_2018_07.pdf' target='_blank'>resume</a>"
 
 document.getElementById('nav').innerHTML = 
-    "L I A N I <b>L Y E</b> // " +
+    "L I A N I <strong>L Y E</strong> // " +
 
     "<div class='dotted-container'>" +
         "<a href = '../../index.html'> work</a>" +
