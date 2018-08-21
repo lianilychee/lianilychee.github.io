@@ -208,6 +208,12 @@ div.title, div.title:visited {
   padding-top: 10px;
 }
 
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 /*div > img {
   vertical-align: middle;
 }*/
