@@ -21,4 +21,4 @@ document.getElementById('nav').innerHTML =
     " // " +
 
     "<a href = '../../about.html'>about</a> // " +
-    "<a href='../../lianilye_resume_2018_07.pdf' target='_blank'>resume</a>"
+    "<a href='../../lianilye_resume.pdf' target='_blank'>resume</a>"
