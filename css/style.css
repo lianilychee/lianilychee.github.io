@@ -84,7 +84,7 @@ ul {
 
 .about-right {
   float: right;
-  width: 400px;
+  width: 450px;
 }
 
 /********** PROJECTS LIST **********/
@@ -170,7 +170,9 @@ div.title, div.title:visited {
 
 /********** CONTENT **********/
 .content { 
-  width: 650px;
+  /*width: 700px;*/
+  width: 800px;
+  /*margin-left: 30px;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -191,14 +193,14 @@ div.title, div.title:visited {
 
 .content-left {
   float: left;
-  width: 312px;
+  width: 375px;
   padding-top: 0;
   padding-right: 0;
 }
 
 .content-right {
   float: right;
-  width: 325px;
+  width: 375px;
   padding-top: 0;
   padding-right: 0;
 }
@@ -206,12 +208,22 @@ div.title, div.title:visited {
 .width-control {
   max-width: 100%; 
   padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .caption {
   text-align: center;
   margin-top: 8px;
   font-style: italic;
+}
+
+.mult-img {
+  display: inline-block;
+  margin-left: 150px;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
 /*div > img {
