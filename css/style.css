@@ -51,8 +51,8 @@ nav {
   background-image: url('../img/underlines/dotted.png');
 }
 
-/* currently not used UGH */
-.current {
+
+.current { /* currently not used UGH */
   display: inline-block;
   background-image: url('../img/underlines/solid.png');
 }
@@ -84,7 +84,7 @@ ul {
 
 .about-right {
   float: right;
-  width: 450px;
+  width: 550px;
 }
 
 /********** PROJECTS LIST **********/
@@ -111,10 +111,16 @@ ul {
   display: none;
 }
 
+.list-work { 
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /********** THUMBNAILS **********/
 
-.thumb { 
+.thumb { /* img wrapper */
   width: 320px; 
   margin-bottom: 10px
 }
