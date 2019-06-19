@@ -1,4 +1,30 @@
-/********** FONTS **********/
+/********** GENERAL **********/
+
+:root {
+  /* Defined */
+  --liani-blue: #2C85C9;
+  --inner-right-width: 540px;
+  --pp-scaledown: 0.35;
+  --splash-space: 10px;
+
+  /* Calculations */
+  --pp-size: calc(var(--inner-right-width)*var(--pp-scaledown));
+}
+
+a { color: var(--liani-blue); text-decoration: none; }
+a:visited { text-decoration: none; color: var(--liani-blue); }
+a:hover { color: white; background-color: var(--liani-blue); }
+
+.tab {
+  padding-left: 20px;
+}
+
+/********** TEXT STYLES **********/
+
+ul {
+  list-style-type: circle;
+  color: black;
+}
 
 @charset 'UTF-8';
 
@@ -21,7 +47,7 @@ h1 {
 
 h2 {
   font-family: 'liani-font';
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: normal;
   text-align: center;
   margin-top: 35px;
@@ -37,201 +63,55 @@ h3 {
   margin-bottom: -5px;
 }
 
-/********** GENERAL **********/
-
-nav {
-  padding-top: 15px;
-  padding-left: 30px;
+/* for <p> content that is in liani font */
+.p-ish {
   font-family: 'liani-font';
-  font-size: 2.5em;
+  font-size: 24px;
+  font-weight: normal;
 }
 
-.dotted-container {
+/********** SPLASH **********/
+
+.index-wrapper {
   display: inline-block;
-  background-image: url('../img/underlines/dotted.png');
 }
 
-
-.current { /* currently not used UGH */
+.index-left {
+  float: left;
   display: inline-block;
-  background-image: url('../img/underlines/solid.png');
+  padding-right: var(--splash-space);
 }
+
+.index-right {
+  float: left; 
+    /* `left` instead of `right` will help with responsiveness */
+  width: var(--inner-right-width);
+  padding-left: var(--splash-space);
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.pp {
+  /* set img size + circular appearance */
+  max-height: var(--pp-size);
+  max-width: var(--pp-size);
+  border-radius: 50%;
+
+  /* horizontally flip img */
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/********** RESPONSIVITY **********/
 
 body {
   font-family: courier;
   font-size: 1em;
-  margin-bottom: 150px;
+  margin: 0px;
 }
-
-a { color: #2C85C9; text-decoration: none; }
-a:visited { text-decoration: none; color: #2C85C9; }
-a:hover { color: white; background-color: #2C85C9; }
-
-ul {
-  list-style-type: circle;
-  color: black;
-}
-
-.tab {
-  padding-left: 20px;
-}
-
-/********** ABOUT **********/
-
-.about-left {
-  float: left;
-}
-
-.about-right {
-  float: right;
-  width: 550px;
-}
-
-/********** PROJECTS LIST **********/
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.wrap { 
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.hide {
-  display: none;
-}
-
-.list-work { 
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/********** THUMBNAILS **********/
-
-.thumb { /* img wrapper */
-  width: 320px; 
-  margin-bottom: 10px
-}
-
-.img-border { 
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: gray; 
-}
-
-.title { 
-  width: 300px; 
-  font-family: 'liani-font'; 
-  font-size: 2em; 
-  padding-top: 5px;
-}
-
-.blurb { 
-  width: 300px; 
-  word-wrap: break-word; 
-}
-
-div.title, div.title:visited { 
-  text-decoration: none;
-  color: black; 
-}
-
-.thumb-img {
-  filter: gray;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
-
-.thumb-img:hover {
-  filter: gray;
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-}
-
-/*#zpd {
-  display: block;
-  width: 300px;
-  height: 150px;
-  background-image:url('../images/zpd/thumb.png');
-  background-size: 300px 150px;
-}
-
-#zpd:hover {
-  background-image:url('../images/zpd/thumb_colored.png');
-  background-size: 300px 150px;
-}*/
-
-
-/********** CONTENT **********/
-.content { 
-  /*width: 700px;*/
-  width: 800px;
-  /*margin-left: 30px;*/
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content a {
-  color: #2C85C9;
-  text-decoration: none;
-}
-
-.content a:hover {
-  color: white;
-}
-
-.content-duo {
-  overflow: auto;
-  display: block;
-}
-
-.content-left {
-  float: left;
-  width: 375px;
-  padding-top: 0;
-  padding-right: 0;
-}
-
-.content-right {
-  float: right;
-  width: 375px;
-  padding-top: 0;
-  padding-right: 0;
-}
-
-.width-control {
-  max-width: 100%; 
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.caption {
-  text-align: center;
-  margin-top: 8px;
-  font-style: italic;
-}
-
-.mult-img {
-  display: inline-block;
-  margin-left: 150px;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-}
-
-/*div > img {
-  vertical-align: middle;
-}*/

@@ -1,5 +1,7 @@
-RESUME CHANGE
+TO-DO
+- Google analytics is throwing console errors
 
+RESUME CHANGE
 Make sure to change references in:
 - index.html nav
 - about.html nav

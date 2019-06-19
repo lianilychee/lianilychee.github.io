@@ -4,191 +4,46 @@
       <title>Liani Lye</title>
       <link rel='stylesheet' href='css/style.css'>
       <link rel='icon' type='image/png' href='img/favicon.png'>
+      <script src="js/lib/jquery-3.4.1.min.js"></script>
+      <script src="js/main.js"></script>
   </head>
 
-  <!-- *** NAV BAR *** -->
-  <nav>
-  L I A N I <strong>L Y E</strong>
-  //
-  <a href='index.html'><u>work</u></a>
-  //
-  <a href='about.html'>about</a>
-  //
-  <a href='lianilye_resume.pdf' target='_blank'>resume</a>
-  </nav>
-
   <body>
-    <br><br>
 
-    <div class='list-work'>
-
-    <!-- *** SELECTORS *** -->
-    <div style='padding: 0px 0px 30px 0px'>
-      <p><i>Status: Page last updated Dec 2018.</i></p>
-
-      <a href='javascript:void(0)' class='filter' id='all' style='text-decoration: underline'>All</a>  |  
-      <a href='javascript:void(0)' class='filter' id='pdev'>New product development</a>  |  
-      <a href='javascript:void(0)' class='filter' id='engn'>Engineering</a>  |  
-      <a href='javascript:void(0)' class='filter' id='user'>Stakeholder engagement</a>  |  
-      <a href='javascript:void(0)' class='filter' id='bdev'>Business development</a>  |  
-      <a href='javascript:void(0)' class='filter' id='pm'>Project management</a>
-    </div>
-
-    <!-- *** THUMBS *** -->
-
-    <ul class='flex-container wrap'>
-
-      <div class='thumb pdev user pm'>
-        <a href='projects/daca/daca.html'>
-            <img class='thumb-img img-border' src='projects/daca/thumb.png' width='300px' height='150px' alt='Google survey in Spanish.  Titled: [CfB] DACA Stories Intake.  Subtitled: If You are a DACA Recipient.  Question: When did you move to the US?'>
-        </a>
-        <div class='title'>DACA STORYTELLING</div>
-        <div class='blurb'>Amplifying DACA recipients' experiences, to aid MA Attorney General's Office in their litigation against DACA repeal.</div>
+    <div class='index-wrapper'>
+      
+      <div class='index-left'>
+        <img class='pp' src='img/self/self4.jpg'>
       </div>
 
-      <div class='thumb pdev pm'>
-        <a href='projects/cliff-effects/cliff-effects.html'>
-            <img class='thumb-img img-border' src='projects/cliff-effects/thumb.png' width='300px' height='150px' alt='Screenshot of Cliff Effects Tool results page.  Table shows SNAP benefits reducing based on income increase.'>
-        </a>
-        <div class='title'>CLIFF EFFECTS MODELING</div>
-        <div class='blurb'>
-        Empowering Project Hope case workers to better serve clients regarding financial planning and assistance programs.</div>
+      <div class='index-right'>
+
+        <h1 style='font-weight: normal; margin-top: 0px;'>
+          L I A N I <strong>L Y E</strong>
+        </h1>
+
+        <p><i>Product x Policy x Research: Defining tech assists to drive positive outcomes for underserved populations</i></p>
+
+        <p>
+          Associate Product Manager @ Ad Hoc, LLC<br>
+          Strategy Lead @ Open Austin, a Code for America brigade
+        </p>
+
+        <p class='p-ish'>
+        <!-- <p class='p-ish'> -->
+          <a href='mailto: lye.liani@gmail.com'>Email</a> // 
+          <a href='lianilye_resume.pdf'>Resume</a> // 
+          <a href='https://www.linkedin.com/in/lianilye/'>LinkedIn</a> // 
+          <a href='https://twitter.com/lianilychee'>Twitter</a> // 
+          Medium (tbd)
+        </p>
       </div>
-
-      <div class='thumb pdev bdev user pm engn'>
-        <a href='projects/otter/otter.html'>
-            <img class='thumb-img' src='projects/otter/thumb2.JPG' width='300px', height='150px' alt='Eleven Vietnamese doctors/nurses, 1 Vietnamese translator, and 1 US student crowded around medical bassinet as student and translator describes functionality.'>
-        </a>
-        <div class='title'>OTTER: AFFORDABLE NEWBORN WARMER</div>
-        <div class='blurb'>Built a low-cost conductive infant warmer for use in developing countries.</div>
-      </div>
-
-      <div class='thumb pdev bdev user pm'>
-        <a href='projects/fit/fit.html'>
-        <!-- <a href='https://docs.google.com/document/d/1jS-HU6fEUJcHPEOgohch7nQQ6U6QToGihHJPInDOaeA/edit'> -->
-            <img class='thumb-img' src='projects/fit/thumb.png' width='300px' height='150px' alt='Emppty room with table and chairs.  Two students sitting on chairs looking at laptops.  Two other students tacking notes on walls.'>
-        </a>
-        <div class='title'>FOUNDRY IDEA TESTING</div>
-        <div class='blurb'>Using the sprint method to test viability, feasibility, and desirability of 5 product concepts in 5 days.</div>
-      </div>
-
-      <div class='thumb bdev pm'>
-        <a href='projects/womentum/womentum.html'>
-            <img class='thumb-img' src='projects/womentum/thumb.png' width='300px' height='150px'>
-        </a>
-        <div class='title'>OPERATIONS CONSULTING</div>
-        <div class='blurb'>Developed donor and partner acquisition strategies for Womentum, a non-profit.</div>
-      </div>
-
-      <div class='thumb engn'>
-        <a href='https://github.com/lianilychee/project_polygon/wiki'>
-            <img class='thumb-img' src='projects/polygon/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>PROJECT POLYGON: SWARM NEATOS</div>
-        <div class='blurb'>Created regular polygons based on the changing number of agents in a swarm.</div>
-      </div>
-
-      <div class='thumb engn'>
-        <a href='https://github.com/lianilychee/project-caribou'>
-            <img class='thumb-img' src='projects/caribou/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>PROJECT CARIBOU: AUTONOMOUS NEATO</div>
-        <div class='blurb'>Using computer vision to line-follow, obey stop signs, and avoid collisions.</div>
-      </div>
-
-
-      <div class='thumb pdev engn'>
-        <a href='projects/icf/icf.html'>
-            <img class='thumb-img' src='projects/icf/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>INTUITIVE CONTROL &amp; FEEDBACK UNDER-ELBOW PROSTHETIC</div>
-        <div class='blurb'>A prosthetic arm that gives the user feedback and control on the cheap.</div>
-      </div>
-
-      <div class='thumb pdev user'>
-        <a href='projects/uocd/uocd.html'>
-            <img class='thumb-img' src='projects/uocd/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>SOUND CHECK: SAFE SPACE LOCATOR</div>
-        <div class='blurb'>Product concept to aid domestic violence hotline volunteers find locations to take calls.</div>
-      </div>
-
-      <div class='thumb pdev engn'>
-        <a href='projects/imemio/imemio.html'>
-            <img class='thumb-img img-border' src='projects/imemio/thumb2.png' width='300px' height='150px'>
-        </a>
-        <div class='title'>TWITTER FIREHOSE DATA VISUALIZATION</div>
-        <div class='blurb'>Making an intelligence analyst tool consumer-facing.</div>
-      </div>
-
-      <div class='thumb user engn'>
-          <a href='projects/cardboard/cardboard.html'>
-              <img class='thumb-img' src='projects/cardboard/thumb.jpg' width='300px' height='150px'>
-          </a>
-          <div class='title'>CARDBOARD CARPENTRY</div>
-          <div class='blurb'>Hacking life with low-tech adaptations.</div>
-      </div>
-
-
-      <!-- *** HIDDEN WORKS *** -->
-
-<!--       <div class='thumb pm engn'>
-        <a href='http://tinyurl.com/olinstpp'>
-            <img class='thumb-img img-border' src='projects/stpp/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>SUSPENDED, NOT SUPPORTED</div>
-        <div class='blurb'>A sociology-flavored, data-driven exploration of disability's role in the school-to-prison pipeline.</div>
-      </div> -->
-
-<!--       <div class='thumb neng'>
-          <a id='zpd' href='https://drive.google.com/open?id=0B55vsX2B3wPOU3NwZmo4SzhVTmM'></a>
-          <div class='title'>THE ZONE OF PROXIMAL DEVELOPMENT</div>
-          <div class='blurb'>Another hand-drawn guide.</div>
-        </div> -->
-
-<!--       <div class='thumb neng'>
-        <a href='projects/prototyping.html'>
-          <img class='thumb-img' src='images/prototyping/thumb.png' width='300px' height='150px'>
-        </a>
-        <div class='title'>LEARNING THROUGH PROTOTYPING</div>
-        <div class='blurb'>A hand-drawn guide.</div>
-      </div> -->
-
-
-<!--       <div class='thumb pm'>
-          <a href='https://lianilychee.wordpress.com/category/culture-chats/'>
-              <img class='thumb-img' src='projects/culture-chats/thumb.jpg' width='300px' height='150px'>
-          </a>
-          <div class='title'>CULTURAL CONVERSATIONS</div>
-          <div class='blurb'>Staring issues of culture, ethnicity, and race of and at Olin, head on.</div>
-      </div> -->
-
-<!--       <div class='thumb neng'>
-        <a href='projects/streetart.html'>
-            <img class='thumb-img' src='images/streetart/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>CAMBRIDGE STREET ART</div>
-        <div class='blurb'>Vinyl and spraypaint.</div>
-      </div> -->
-
-<!--      <div class='thumb neng'>
-        <a href='projects/glass.html'>
-            <img class='thumb-img' src='images/glass/thumb.jpg' width='300px' height='150px'>
-        </a>
-        <div class='title'>THE BROKEN GLASS PROJECT</div>
-        <div class='blurb'>A study in diligence and meticulousness.</div>
-      </div> -->
-
-    </ul>
-
     </div>
 
   </body>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-  <script>
+<!--   <script>
     // Google analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -214,15 +69,6 @@
         // apply the indication to the clicked one
         $(selectedFilter).css('text-decoration','underline');
     }
-
-    // filtering
-    $('#all').click( function() { hide('.all'); indicate('#all')});
-    $('#pdev').click( function() { hide('.pdev'); indicate('#pdev')});
-    $('#bdev').click( function() { hide('.bdev'); indicate('#bdev')});
-    $('#user').click( function() { hide('.user'); indicate('#user')});
-    $('#engn').click( function() { hide('.engn'); indicate('#engn')});
-    $('#pm').click( function() { hide('.pm'); indicate('#pm')});
-
-  </script>
+  </script> -->
 
 </html>
