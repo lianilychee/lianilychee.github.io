@@ -15,8 +15,77 @@ a { color: var(--liani-blue); text-decoration: none; }
 a:visited { text-decoration: none; color: var(--liani-blue); }
 a:hover { color: white; background-color: var(--liani-blue); }
 
-.tab {
+/*.tab {
   padding-left: 20px;
+}*/
+
+
+/********** RESPONSIVENESS **********/
+
+body {
+  font-family: courier;
+  font-size: 1em;
+  margin: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Mobile first styles go here */
+h1 {
+  font-size: 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .three-fourths {
+    width: calc(100% / 4 * 3);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
 }
 
 /********** TEXT STYLES **********/
@@ -106,12 +175,6 @@ h3 {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+
 }
 
-/********** RESPONSIVITY **********/
-
-body {
-  font-family: courier;
-  font-size: 1em;
-  margin: 0px;
-}
