@@ -1,11 +1,15 @@
 /********** GENERAL **********/
 
+.index-wrapper {
+  display: inline-block;
+}
+
 :root {
   /* Defined */
   --liani-blue: #2C85C9;
   --inner-right-width: 540px;
   --pp-scaledown: 0.35;
-  --splash-space: 10px;
+  /*--splash-space: 10px;*/
 
   /* Calculations */
   --pp-size: calc(var(--inner-right-width)*var(--pp-scaledown));
@@ -15,37 +19,76 @@ a { color: var(--liani-blue); text-decoration: none; }
 a:visited { text-decoration: none; color: var(--liani-blue); }
 a:hover { color: white; background-color: var(--liani-blue); }
 
-/*.tab {
-  padding-left: 20px;
-}*/
-
-
-/********** RESPONSIVENESS **********/
-
-body {
-  font-family: courier;
-  font-size: 1em;
-  margin: 0px;
-}
-
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+.pp {
+  /* set img size + circular appearance */
+  max-height: var(--pp-size);
+  max-width: var(--pp-size);
+  border-radius: 50%;
 
-/* Mobile first styles go here */
+  /* horizontally flip img */
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+
+}
+
+/********** GENERAL TEXT STYLES **********/
+
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'liani-font';
+  src: url('liani.ttf');
+}
+
+@font-face {
+  font-family: 'courier';
+  src: url('cour.ttf');
+}
+
+/********** MOBILE STYLES **********/
+
+body {
+  font-family: courier;
+  font-size: 1em;
+}
+
 h1 {
-  font-size: 1.5rem;
+  font-family: 'liani-font';
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: center;
+  }
+
+h2 {
+  font-family: 'liani-font';
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: courier;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-top: 0;
   max-width: 1000px;
 }
 
@@ -63,6 +106,8 @@ h1 {
 .half {
   width: 100%;
 }
+
+/********** DESKTOP STYLES **********/
 
 @media only screen and (min-width: 800px) {
   .one {
@@ -86,95 +131,27 @@ h1 {
   .column {
     float: left;
   }
-}
 
-/********** TEXT STYLES **********/
+  h1 {
+    font-family: 'liani-font';
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: left;
+  }
 
-ul {
-  list-style-type: circle;
-  color: black;
-}
+  h2 {
+    font-family: 'liani-font';
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
 
-@charset 'UTF-8';
+  p {
+    font-family: courier;
+    font-size: 1.1em;
+    font-weight: normal;
+  }
 
-@font-face {
-  font-family: 'liani-font';
-  src: url('liani.ttf');
-}
-
-@font-face {
-  font-family: 'courier';
-  src: url('cour.ttf');
-}
-
-h1 {
-  font-family: 'liani-font';
-  font-size: 3.5em;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-h2 {
-  font-family: 'liani-font';
-  font-size: 2.5em;
-  font-weight: normal;
-  text-align: center;
-  margin-top: 35px;
-  margin-bottom: -5px;
-}
-
-h3 {
-  font-family: 'liani-font';
-  font-size: 2em;
-  font-weight: normal;
-  margin-left: 1px;
-  margin-top: 30px;
-  margin-bottom: -5px;
-}
-
-/* for <p> content that is in liani font */
-.p-ish {
-  font-family: 'liani-font';
-  font-size: 24px;
-  font-weight: normal;
-}
-
-/********** SPLASH **********/
-
-.index-wrapper {
-  display: inline-block;
-}
-
-.index-left {
-  float: left;
-  display: inline-block;
-  padding-right: var(--splash-space);
-}
-
-.index-right {
-  float: left; 
-    /* `left` instead of `right` will help with responsiveness */
-  width: var(--inner-right-width);
-  padding-left: var(--splash-space);
-
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-.pp {
-  /* set img size + circular appearance */
-  max-height: var(--pp-size);
-  max-width: var(--pp-size);
-  border-radius: 50%;
-
-  /* horizontally flip img */
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 
 }
-
