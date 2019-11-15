@@ -9,7 +9,6 @@
   --liani-blue: #2C85C9;
   --inner-right-width: 540px;
   --pp-scaledown: 0.35;
-  /*--splash-space: 10px;*/
 
   /* Calculations */
   --pp-size: calc(var(--inner-right-width)*var(--pp-scaledown));
@@ -110,23 +109,11 @@ p {
 /********** DESKTOP STYLES **********/
 
 @media only screen and (min-width: 800px) {
-  .one {
-    width: 100%;
-  }
-  .half {
-    width: calc(100% / 2);
-  }
-  .one-third {
-    width: calc(100% / 3);
-  }
   .one-fourth {
     width: calc(100% / 4);
   }
   .three-fourths {
     width: calc(100% / 4 * 3);
-  }
-  .two-thirds {
-    width: calc(100% / 3 * 2);
   }
   .column {
     float: left;
