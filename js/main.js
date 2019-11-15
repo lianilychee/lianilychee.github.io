@@ -14,14 +14,6 @@ $(document).ready(function() {
   if (winW > 800) {
     $('.index-wrapper').css('margin-left',halfW);
   }
-
-  console.log('winW '+winW);
-  console.log('winH '+winH);
-  console.log('wrapperW '+wrapperW);  
-  console.log('wrapperH '+wrapperH);
-  console.log('halfH '+halfH);
-  console.log('halfW '+halfW);
-  
 });
 
 
