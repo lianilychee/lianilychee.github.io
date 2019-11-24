@@ -14,6 +14,11 @@ $(document).ready(function() {
   if (winW > 800) {
     $('.index-wrapper').css('margin-left',halfW);
   }
+
+  // console.log("winW:     " + winW);
+  // console.log("wrapperW: " + wrapperW);
+  // console.log("halfW:    " + halfW);
+
 });
 
 

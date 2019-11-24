@@ -1,5 +1,11 @@
 /********** GENERAL **********/
 
+.box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
 .index-wrapper {
   display: inline-block;
 }
