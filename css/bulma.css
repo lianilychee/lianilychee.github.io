@@ -8661,16 +8661,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   min-height: 100vh;
 }
 
-.is-tcentered {
-  justify-content: center;
-  position: relative;
-}
-
-#wrapper {
-  position: absolute;
-  top: 50%;
-  margin-top:-20em;
-}
 
 @media screen and (max-width: 768px) {
   .hero-video {
