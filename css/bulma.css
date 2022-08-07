@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "liani";
-  src: url("https://github.com/lianilychee/lianilychee.github.io/raw/master/css/liani.ttf");
+  src: url("../css/liani.ttf");
 }
 
 .delete, .modal-close, .button, .file, .breadcrumb, .pagination-previous,
