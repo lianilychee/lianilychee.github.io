@@ -18,6 +18,11 @@
   }
 }
 
+@font-face {
+  font-family: "liani";
+  src: url("https://github.com/lianilychee/lianilychee.github.io/raw/master/css/liani.ttf");
+}
+
 .delete, .modal-close, .button, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -2316,8 +2321,7 @@ fieldset[disabled] .button {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.125;
-  font-family: 'liani'; 
-  src: url('/css/liani.ttf')
+  font-family: 'liani';
 }
 
 .title strong {
